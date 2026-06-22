@@ -4,6 +4,11 @@ export const translations = {
     siteDesc: 'Free online JSON formatter, validator, and beautifier',
     
     nav: {
+      format: 'Format',
+      encode: 'Encode',
+      dev: 'Dev',
+      convert: 'Convert',
+      generate: 'Generate',
       jsonFormatter: 'JSON Formatter',
       xmlFormatter: 'XML Formatter',
       base64: 'Base64',
@@ -180,6 +185,11 @@ export const translations = {
     siteDesc: '免费在线 JSON 格式化、验证和美化工具',
     
     nav: {
+      format: '格式',
+      encode: '编码',
+      dev: '开发',
+      convert: '转换',
+      generate: '生成',
       jsonFormatter: 'JSON 格式化',
       xmlFormatter: 'XML 格式化',
       base64: 'Base64',
@@ -356,6 +366,11 @@ export const translations = {
     siteDesc: 'Formateador, validador y embellecedor JSON gratuito en línea',
     
     nav: {
+      format: 'Formato',
+      encode: 'Codificar',
+      dev: 'Dev',
+      convert: 'Convertir',
+      generate: 'Generar',
       jsonFormatter: 'Formateador JSON',
       xmlFormatter: 'Formateador XML',
       base64: 'Base64',
@@ -510,15 +525,15 @@ export const translations = {
       },
       
       qrcode: {
-        title: 'QR Code Generator',
-        desc: 'Generate QR codes from text or URLs.',
-        inputLabel: 'Content',
-        inputPlaceholder: 'Enter text or URL to encode...',
-        sizeLabel: 'Size',
+        title: 'Generador de QR',
+        desc: 'Genera código QR desde texto o URLs.',
+        inputLabel: 'Contenido',
+        inputPlaceholder: 'Ingresa texto o URL...',
+        sizeLabel: 'Tamaño',
         colorLabel: 'Color',
-        generate: 'Generate',
-        download: 'Download',
-        placeholder: 'QR code will appear here',
+        generate: 'Generar',
+        download: 'Descargar',
+        placeholder: 'QR aparecerá aquí',
       },
     },
     
@@ -532,6 +547,11 @@ export const translations = {
     siteDesc: '無料オンラインJSONフォーマッター、バリデーター、ビューティファイア',
     
     nav: {
+      format: 'フォーマット',
+      encode: 'エンコード',
+      dev: '開発',
+      convert: '変換',
+      generate: '生成',
       jsonFormatter: 'JSON フォーマッター',
       xmlFormatter: 'XML フォーマッター',
       base64: 'Base64',

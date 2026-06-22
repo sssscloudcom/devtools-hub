@@ -32,7 +32,7 @@ function renderShell() {
     <!-- Format Tools -->
     <div class="nav-dropdown">
       <button class="nav-dropdown-btn">
-        <span>Format</span>
+        <span>${i18n.nav.format || 'Format'}</span>
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
       </button>
       <div class="nav-dropdown-menu">
@@ -58,7 +58,7 @@ function renderShell() {
     <!-- Encode Tools -->
     <div class="nav-dropdown">
       <button class="nav-dropdown-btn">
-        <span>Encode</span>
+        <span>${i18n.nav.encode || 'Encode'}</span>
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
       </button>
       <div class="nav-dropdown-menu">
@@ -84,7 +84,7 @@ function renderShell() {
     <!-- Developer Tools -->
     <div class="nav-dropdown">
       <button class="nav-dropdown-btn">
-        <span>Dev</span>
+        <span>${i18n.nav.dev || 'Dev'}</span>
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
       </button>
       <div class="nav-dropdown-menu">
@@ -110,7 +110,7 @@ function renderShell() {
     <!-- Convert Tools -->
     <div class="nav-dropdown">
       <button class="nav-dropdown-btn">
-        <span>Convert</span>
+        <span>${i18n.nav.convert || 'Convert'}</span>
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
       </button>
       <div class="nav-dropdown-menu">
@@ -128,7 +128,7 @@ function renderShell() {
     <!-- Generate Tools -->
     <div class="nav-dropdown">
       <button class="nav-dropdown-btn">
-        <span>Generate</span>
+        <span>${i18n.nav.generate || 'Generate'}</span>
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
       </button>
       <div class="nav-dropdown-menu">
