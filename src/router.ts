@@ -3,6 +3,10 @@ import { regexTester, bindRegexTesterEvents } from './tools/regex'
 import { colorConverter, bindColorConverterEvents } from './tools/color'
 import { unitConverter, bindUnitConverterEvents } from './tools/unit'
 import { markdownEditor, bindMarkdownEditorEvents } from './tools/markdown'
+import { jwtDecoder, bindJwtDecoderEvents } from './tools/jwt'
+import { uuidGenerator, bindUuidGeneratorEvents } from './tools/uuid'
+import { cronParser, bindCronParserEvents } from './tools/cron'
+import { qrCodeGenerator, bindQrCodeGeneratorEvents } from './tools/qrcode'
 
 // HTML转义函数
 function escapeHtml(text: string): string {
@@ -33,6 +37,10 @@ export class Router {
       '/color': this.colorConverter,
       '/unit': this.unitConverter,
       '/markdown': this.markdownEditor,
+      '/jwt': this.jwtDecoder,
+      '/uuid': this.uuidGenerator,
+      '/cron': this.cronParser,
+      '/qrcode': this.qrCodeGenerator,
     }
   }
 
@@ -334,6 +342,10 @@ export class Router {
     if (window.location.pathname === '/color') bindColorConverterEvents(this)
     if (window.location.pathname === '/unit') bindUnitConverterEvents(this)
     if (window.location.pathname === '/markdown') bindMarkdownEditorEvents(this)
+    if (window.location.pathname === '/jwt') bindJwtDecoderEvents(this)
+    if (window.location.pathname === '/uuid') bindUuidGeneratorEvents(this)
+    if (window.location.pathname === '/cron') bindCronParserEvents(this)
+    if (window.location.pathname === '/qrcode') bindQrCodeGeneratorEvents(this)
   }
 
   home() {
@@ -351,6 +363,10 @@ export class Router {
       { name: i18n.nav.color, path: '/color', icon: '🎨', desc: i18n.tools.color.desc },
       { name: i18n.nav.unit, path: '/unit', icon: '📐', desc: i18n.tools.unit.desc },
       { name: i18n.nav.markdown, path: '/markdown', icon: '📝', desc: i18n.tools.markdown.desc },
+      { name: i18n.nav.jwt, path: '/jwt', icon: '🔓', desc: i18n.tools.jwt.desc },
+      { name: i18n.nav.uuid, path: '/uuid', icon: '🔑', desc: i18n.tools.uuid.desc },
+      { name: i18n.nav.cron, path: '/cron', icon: '⏱️', desc: i18n.tools.cron.desc },
+      { name: i18n.nav.qrcode, path: '/qrcode', icon: '📱', desc: i18n.tools.qrcode.desc },
     ]
     
     return `
@@ -643,5 +659,21 @@ export class Router {
 
   markdownEditor() {
     return markdownEditor(this)
+  }
+
+  jwtDecoder() {
+    return jwtDecoder(this)
+  }
+
+  uuidGenerator() {
+    return uuidGenerator(this)
+  }
+
+  cronParser() {
+    return cronParser(this)
+  }
+
+  qrCodeGenerator() {
+    return qrCodeGenerator(this)
   }
 }

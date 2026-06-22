@@ -100,6 +100,22 @@ function renderShell() {
           <span class="nav-dropdown-icon">U</span>
           <span>${i18n.nav.unit}</span>
         </a>
+        <a href="/jwt${window.location.search}" class="nav-dropdown-item" data-path="/jwt">
+          <span class="nav-dropdown-icon">JWT</span>
+          <span>${i18n.nav.jwt}</span>
+        </a>
+        <a href="/uuid${window.location.search}" class="nav-dropdown-item" data-path="/uuid">
+          <span class="nav-dropdown-icon">UID</span>
+          <span>${i18n.nav.uuid}</span>
+        </a>
+        <a href="/cron${window.location.search}" class="nav-dropdown-item" data-path="/cron">
+          <span class="nav-dropdown-icon">CR</span>
+          <span>${i18n.nav.cron}</span>
+        </a>
+        <a href="/qrcode${window.location.search}" class="nav-dropdown-item" data-path="/qrcode">
+          <span class="nav-dropdown-icon">QR</span>
+          <span>${i18n.nav.qrcode}</span>
+        </a>
       </div>
     </div>
     
