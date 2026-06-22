@@ -32,7 +32,7 @@ function renderShell() {
     <!-- Format Tools -->
     <div class="nav-dropdown">
       <button class="nav-dropdown-btn">
-        <span>${i18n.nav.jsonFormatter}</span>
+        <span>Format</span>
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
       </button>
       <div class="nav-dropdown-menu">
@@ -55,10 +55,10 @@ function renderShell() {
       </div>
     </div>
     
-    <!-- Encode/Hash Tools -->
+    <!-- Encode Tools -->
     <div class="nav-dropdown">
       <button class="nav-dropdown-btn">
-        <span>${i18n.nav.base64}</span>
+        <span>Encode</span>
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
       </button>
       <div class="nav-dropdown-menu">
@@ -84,21 +84,13 @@ function renderShell() {
     <!-- Developer Tools -->
     <div class="nav-dropdown">
       <button class="nav-dropdown-btn">
-        <span>${i18n.nav.regex}</span>
+        <span>Dev</span>
         <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
       </button>
       <div class="nav-dropdown-menu">
         <a href="/regex${window.location.search}" class="nav-dropdown-item" data-path="/regex">
           <span class="nav-dropdown-icon">.*</span>
           <span>${i18n.nav.regex}</span>
-        </a>
-        <a href="/color${window.location.search}" class="nav-dropdown-item" data-path="/color">
-          <span class="nav-dropdown-icon">H</span>
-          <span>${i18n.nav.color}</span>
-        </a>
-        <a href="/unit${window.location.search}" class="nav-dropdown-item" data-path="/unit">
-          <span class="nav-dropdown-icon">U</span>
-          <span>${i18n.nav.unit}</span>
         </a>
         <a href="/jwt${window.location.search}" class="nav-dropdown-item" data-path="/jwt">
           <span class="nav-dropdown-icon">JWT</span>
@@ -111,6 +103,38 @@ function renderShell() {
         <a href="/cron${window.location.search}" class="nav-dropdown-item" data-path="/cron">
           <span class="nav-dropdown-icon">CR</span>
           <span>${i18n.nav.cron}</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Convert Tools -->
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-btn">
+        <span>Convert</span>
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a href="/color${window.location.search}" class="nav-dropdown-item" data-path="/color">
+          <span class="nav-dropdown-icon">H</span>
+          <span>${i18n.nav.color}</span>
+        </a>
+        <a href="/unit${window.location.search}" class="nav-dropdown-item" data-path="/unit">
+          <span class="nav-dropdown-icon">U</span>
+          <span>${i18n.nav.unit}</span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- Generate Tools -->
+    <div class="nav-dropdown">
+      <button class="nav-dropdown-btn">
+        <span>Generate</span>
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+      </button>
+      <div class="nav-dropdown-menu">
+        <a href="/uuid${window.location.search}" class="nav-dropdown-item" data-path="/uuid">
+          <span class="nav-dropdown-icon">UID</span>
+          <span>${i18n.nav.uuid}</span>
         </a>
         <a href="/qrcode${window.location.search}" class="nav-dropdown-item" data-path="/qrcode">
           <span class="nav-dropdown-icon">QR</span>
