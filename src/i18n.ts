@@ -376,16 +376,16 @@ export const translations = {
       base64: 'Base64',
       urlEncoder: 'Codificador URL',
       hash: 'Hash',
-      timestamp: 'Timestamp',
-      diff: 'Diff',
-      regex: 'Regex Tester',
-      color: 'Color Converter',
-      unit: 'Unit Converter',
-      markdown: 'Markdown Editor',
-      jwt: 'JWT Decoder',
-      uuid: 'UUID Generator',
-      cron: 'Cron Parser',
-      qrcode: 'QR Code',
+      timestamp: 'Marca de tiempo',
+      diff: 'Diferencias',
+      regex: 'Probador Regex',
+      color: 'Convertidor Color',
+      unit: 'Convertidor Unidades',
+      markdown: 'Editor Markdown',
+      jwt: 'Decodificador JWT',
+      uuid: 'Generador UUID',
+      cron: 'Analizador Cron',
+      qrcode: 'Código QR',
     },
     
     common: {
@@ -461,17 +461,17 @@ export const translations = {
       },
       
       regex: {
-        title: 'Regex Tester',
+        title: 'Probador de Regex',
         desc: 'Prueba expresiones regulares con coincidencias en vivo.',
       },
       
       color: {
-        title: 'Color Converter',
+        title: 'Convertidor de Color',
         desc: 'Convierte colores entre formatos HEX, RGB, HSL, RGBA.',
       },
       
       unit: {
-        title: 'Unit Converter',
+        title: 'Convertidor de Unidades',
         desc: 'Convierte unidades de longitud, peso, temperatura, datos, tiempo.',
       },
       
@@ -481,47 +481,47 @@ export const translations = {
       },
       
       jwt: {
-        title: 'JWT Decoder',
-        desc: 'Decode JSON Web Tokens and view header, payload, and signature.',
-        inputLabel: 'JWT Token',
-        inputPlaceholder: 'Paste your JWT token here...',
-        headerLabel: 'Header (decoded)',
-        headerPlaceholder: 'JWT header will appear here...',
-        payloadLabel: 'Payload (decoded)',
-        payloadPlaceholder: 'JWT payload will appear here...',
+        title: 'Decodificador JWT',
+        desc: 'Decodifica JSON Web Tokens y muestra header, payload y signature.',
+        inputLabel: 'Token JWT',
+        inputPlaceholder: 'Pega tu token JWT aquí...',
+        headerLabel: 'Header (decodificado)',
+        headerPlaceholder: 'El header JWT aparecerá aquí...',
+        payloadLabel: 'Payload (decodificado)',
+        payloadPlaceholder: 'El payload JWT aparecerá aquí...',
         signatureLabel: 'Signature (base64)',
         signaturePlaceholder: 'JWT signature...',
-        decode: 'Decode JWT',
+        decode: 'Decodificar JWT',
       },
       
       uuid: {
-        title: 'UUID Generator',
-        desc: 'Generate random UUID v4 identifiers.',
-        countLabel: 'Count',
-        generate: 'Generate UUIDs',
-        copyAll: 'Copy All',
-        outputLabel: 'Generated UUIDs',
-        outputPlaceholder: 'Generated UUIDs will appear here...',
+        title: 'Generador UUID',
+        desc: 'Genera identificadores UUID v4 aleatorios.',
+        countLabel: 'Cantidad',
+        generate: 'Generar UUIDs',
+        copyAll: 'Copiar Todos',
+        outputLabel: 'UUIDs Generados',
+        outputPlaceholder: 'Los UUIDs generados aparecerán aquí...',
       },
       
       cron: {
-        title: 'Cron Parser',
-        desc: 'Parse cron expressions and see human-readable descriptions.',
-        inputLabel: 'Cron Expression',
-        inputPlaceholder: 'e.g., 0 9 * * 1-5',
-        presetsLabel: 'Presets',
-        everyHour: 'Every Hour',
-        everyDay: 'Every Day',
-        everyWeek: 'Every Week',
-        everyMonth: 'Every Month',
-        every5min: 'Every 5 Min',
-        parse: 'Parse',
-        resultLabel: 'Human-Readable Description',
-        fieldMinute: 'Minute',
-        fieldHour: 'Hour',
-        fieldDay: 'Day',
-        fieldMonth: 'Month',
-        fieldWeekday: 'Weekday',
+        title: 'Analizador Cron',
+        desc: 'Analiza expresiones cron y muestra descripciones legibles.',
+        inputLabel: 'Expresión Cron',
+        inputPlaceholder: 'ej., 0 9 * * 1-5',
+        presetsLabel: 'Preajustes',
+        everyHour: 'Cada Hora',
+        everyDay: 'Cada Día',
+        everyWeek: 'Cada Semana',
+        everyMonth: 'Cada Mes',
+        every5min: 'Cada 5 Min',
+        parse: 'Analizar',
+        resultLabel: 'Descripción Legible',
+        fieldMinute: 'Minuto',
+        fieldHour: 'Hora',
+        fieldDay: 'Día',
+        fieldMonth: 'Mes',
+        fieldWeekday: 'Día de Semana',
       },
       
       qrcode: {
@@ -559,14 +559,14 @@ export const translations = {
       hash: 'ハッシュ',
       timestamp: 'タイムスタンプ',
       diff: '差分',
-      regex: 'Regex Tester',
-      color: 'Color Converter',
-      unit: 'Unit Converter',
-      markdown: 'Markdown Editor',
-      jwt: 'JWT Decoder',
-      uuid: 'UUID Generator',
-      cron: 'Cron Parser',
-      qrcode: 'QR Code',
+      regex: '正規テスト',
+      color: '色変換',
+      unit: '単位変換',
+      markdown: 'Markdown',
+      jwt: 'JWT 解析',
+      uuid: 'UUID 生成',
+      cron: 'Cron 解析',
+      qrcode: 'QR コード',
     },
     
     common: {
@@ -642,17 +642,17 @@ export const translations = {
       },
       
       regex: {
-        title: 'Regex Tester',
+        title: '正規表現テスター',
         desc: '正規表現をライブマッチングでテスト。',
       },
       
       color: {
-        title: 'Color Converter',
+        title: '色変換',
         desc: 'HEX、RGB、HSL、RGBA形式間で色を変換。',
       },
       
       unit: {
-        title: 'Unit Converter',
+        title: '単位変換',
         desc: '長さ、重量、温度、データ、時間の単位を変換。',
       },
       
@@ -662,13 +662,13 @@ export const translations = {
       },
       
       jwt: {
-        title: 'JWT Decoder',
+        title: 'JWT 解析',
         desc: 'JWTトークンをデコードし、Header、Payload、Signatureを表示。',
         inputLabel: 'JWT Token',
         inputPlaceholder: 'JWTトークンをここに貼り付け...',
-        headerLabel: 'Header (decoded)',
+        headerLabel: 'Header (デコード済)',
         headerPlaceholder: 'JWT headerがここに表示されます...',
-        payloadLabel: 'Payload (decoded)',
+        payloadLabel: 'Payload (デコード済)',
         payloadPlaceholder: 'JWT payloadがここに表示されます...',
         signatureLabel: 'Signature (base64)',
         signaturePlaceholder: 'JWT signature...',
@@ -676,7 +676,7 @@ export const translations = {
       },
       
       uuid: {
-        title: 'UUID Generator',
+        title: 'UUID 生成',
         desc: 'ランダムなUUID v4を生成。',
         countLabel: '数',
         generate: 'UUIDを生成',
@@ -686,7 +686,7 @@ export const translations = {
       },
       
       cron: {
-        title: 'Cron Parser',
+        title: 'Cron 解析',
         desc: 'Cron式を解析し、人間が読める説明を表示。',
         inputLabel: 'Cron式',
         inputPlaceholder: '例：0 9 * * 1-5',
@@ -706,7 +706,7 @@ export const translations = {
       },
       
       qrcode: {
-        title: 'QR Code Generator',
+        title: 'QR コード生成',
         desc: 'テキストやURLからQRコードを生成。',
         inputLabel: '内容',
         inputPlaceholder: 'テキストまたはURLを入力...',
