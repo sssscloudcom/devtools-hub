@@ -55,7 +55,18 @@ export function bindUuidGeneratorEvents(router: any) {
     output.value = uuids.join('\n')
   })
   
-  copyAllBtn?.addEventListener('click', () => {
-    navigator.clipboard.writeText(output.value)
+  copyAllBtn?.addEventListener('click', async () => {
+    const text = output.value
+    if (!text.trim()) return
+    try {
+      await navigator.clipboard.writeText(text)
+      const originalText = copyAllBtn.textContent
+      copyAllBtn.textContent = '已复制!'
+      setTimeout(() => {
+        copyAllBtn.textContent = originalText
+      }, 1500)
+    } catch (e) {
+      console.error('Copy failed:', e)
+    }
   })
 }
