@@ -13,7 +13,7 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/?lang=ja"/>
   </url>
   
-  <!-- JSON Formatter -->
+  <!-- Format Tools -->
   <url>
     <loc>https://tools.nextapi.pro/json</loc>
     <changefreq>weekly</changefreq>
@@ -24,7 +24,6 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/json?lang=ja"/>
   </url>
   
-  <!-- XML Formatter -->
   <url>
     <loc>https://tools.nextapi.pro/xml</loc>
     <changefreq>weekly</changefreq>
@@ -35,7 +34,27 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/xml?lang=ja"/>
   </url>
   
-  <!-- Base64 -->
+  <url>
+    <loc>https://tools.nextapi.pro/markdown</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/markdown?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/markdown?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/markdown?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/markdown?lang=ja"/>
+  </url>
+  
+  <url>
+    <loc>https://tools.nextapi.pro/diff</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/diff?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/diff?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/diff?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/diff?lang=ja"/>
+  </url>
+  
+  <!-- Encode Tools -->
   <url>
     <loc>https://tools.nextapi.pro/base64</loc>
     <changefreq>weekly</changefreq>
@@ -46,7 +65,6 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/base64?lang=ja"/>
   </url>
   
-  <!-- URL Encoder -->
   <url>
     <loc>https://tools.nextapi.pro/url</loc>
     <changefreq>weekly</changefreq>
@@ -57,7 +75,6 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/url?lang=ja"/>
   </url>
   
-  <!-- Hash Generator -->
   <url>
     <loc>https://tools.nextapi.pro/hash</loc>
     <changefreq>weekly</changefreq>
@@ -68,7 +85,6 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/hash?lang=ja"/>
   </url>
   
-  <!-- Timestamp -->
   <url>
     <loc>https://tools.nextapi.pro/timestamp</loc>
     <changefreq>weekly</changefreq>
@@ -79,14 +95,107 @@
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/timestamp?lang=ja"/>
   </url>
   
-  <!-- Diff Tool -->
+  <!-- Developer Tools -->
   <url>
-    <loc>https://tools.nextapi.pro/diff</loc>
+    <loc>https://tools.nextapi.pro/regex</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/regex?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/regex?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/regex?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/regex?lang=ja"/>
+  </url>
+  
+  <url>
+    <loc>https://tools.nextapi.pro/jwt</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/jwt?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/jwt?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/jwt?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/jwt?lang=ja"/>
+  </url>
+  
+  <url>
+    <loc>https://tools.nextapi.pro/uuid</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/diff?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/diff?lang=zh"/>
-    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/diff?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/diff?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/uuid?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/uuid?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/uuid?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/uuid?lang=ja"/>
+  </url>
+  
+  <url>
+    <loc>https://tools.nextapi.pro/cron</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/cron?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/cron?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/cron?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/cron?lang=ja"/>
+  </url>
+  
+  <!-- Convert Tools -->
+  <url>
+    <loc>https://tools.nextapi.pro/color</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/color?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/color?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/color?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/color?lang=ja"/>
+  </url>
+  
+  <url>
+    <loc>https://tools.nextapi.pro/unit</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/unit?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/unit?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/unit?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/unit?lang=ja"/>
+  </url>
+  
+  <!-- Generate Tools -->
+  <url>
+    <loc>https://tools.nextapi.pro/qrcode</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/qrcode?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/qrcode?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/qrcode?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/qrcode?lang=ja"/>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://tools.nextapi.pro/privacy</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/privacy?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/privacy?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/privacy?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/privacy?lang=ja"/>
+  </url>
+  
+  <url>
+    <loc>https://tools.nextapi.pro/about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/about?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/about?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/about?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/about?lang=ja"/>
+  </url>
+  
+  <url>
+    <loc>https://tools.nextapi.pro/terms</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://tools.nextapi.pro/terms?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/terms?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/terms?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/terms?lang=ja"/>
   </url>
 </urlset>

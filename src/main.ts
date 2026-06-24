@@ -83,6 +83,21 @@ const seoData: Record<string, { title: string; description: string; keywords: st
     title: 'QR Code Generator - Generate QR Codes',
     description: 'Free online QR code generator. Generate QR codes from text or URLs instantly.',
     keywords: 'qr code generator, generate qr, qr online, qr code'
+  },
+  '/privacy': {
+    title: 'Privacy Policy - JSON Tools',
+    description: 'Learn how JSON Tools handles your data. 100% browser-side processing, no data collection, no tracking cookies.',
+    keywords: 'privacy policy, data protection, browser-side processing'
+  },
+  '/about': {
+    title: 'About JSON Tools - Free Online Developer Utilities',
+    description: 'JSON Tools provides 15+ free online developer utilities. Privacy-first, instant results, multi-language support.',
+    keywords: 'about json tools, free developer tools, online utilities'
+  },
+  '/terms': {
+    title: 'Terms of Service - JSON Tools',
+    description: 'Terms of service for JSON Tools. Free online developer utilities with browser-side processing.',
+    keywords: 'terms of service, usage terms, legal'
   }
 }
 
@@ -259,17 +274,23 @@ function renderShell() {
     
     <div class="header-actions">
       <select class="lang-select" id="lang-select">
-        <option value="en" ${lang === 'en' ? 'selected' : ''}>🇺🇸 EN</option>
+        <option value="en" ${lang === 'en' ? 'selected' : ''}>🇺🇸 English</option>
         <option value="zh" ${lang === 'zh' ? 'selected' : ''}>🇨🇳 中文</option>
-        <option value="es" ${lang === 'es' ? 'selected' : ''}>🇪🇸 ES</option>
+        <option value="es" ${lang === 'es' ? 'selected' : ''}>🇪🇸 Español</option>
+        <option value="de" ${lang === 'de' ? 'selected' : ''}>🇩🇪 Deutsch</option>
         <option value="ja" ${lang === 'ja' ? 'selected' : ''}>🇯🇵 日本語</option>
+        <option value="fr" ${lang === 'fr' ? 'selected' : ''}>🇫🇷 Français</option>
+        <option value="ru" ${lang === 'ru' ? 'selected' : ''}>🇷🇺 Русский</option>
+        <option value="pt" ${lang === 'pt' ? 'selected' : ''}>🇧🇷 Português</option>
+        <option value="id" ${lang === 'id' ? 'selected' : ''}>🇮🇩 Indonesia</option>
+        <option value="ar" ${lang === 'ar' ? 'selected' : ''}>🇸🇦 العربية</option>
       </select>
       <button class="btn-dark" id="dark-toggle">🌓</button>
     </div>
   </div>
 </header>
 <main class="main"><div class="container" id="content"></div></main>
-<footer class="footer"><div class="container"><p>${i18n.footer.privacy}</p></div></footer>
+<footer class="footer"><div class="container"><p>${i18n.footer.privacy}</p><p class="footer-links"><a href="/privacy${window.location.search}">${i18n.pages!.privacy.title}</a> · <a href="/terms${window.location.search}">${i18n.pages!.terms.title}</a> · <a href="/about${window.location.search}">${i18n.pages!.about.title}</a></p></div></footer>
 `
 
   // 更新导航激活状态

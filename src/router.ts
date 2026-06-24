@@ -41,6 +41,9 @@ export class Router {
       '/uuid': this.uuidGenerator,
       '/cron': this.cronParser,
       '/qrcode': this.qrCodeGenerator,
+      '/privacy': this.privacy,
+      '/about': this.about,
+      '/terms': this.terms,
     }
   }
 
@@ -675,5 +678,82 @@ export class Router {
 
   qrCodeGenerator() {
     return qrCodeGenerator(this)
+  }
+
+  privacy() {
+    const lang = getLang()
+    const i18n = t(lang)
+    const p = i18n.pages!.privacy
+    return `
+      <div class="tool-header">
+        <h1 class="tool-title">${p.title}</h1>
+        <p style="color: var(--text-secondary); font-size: 0.875rem">${p.lastUpdated}</p>
+      </div>
+      <div class="legal-page">
+        <p>${p.intro}</p>
+        <h2>${p.dataCollection.title}</h2>
+        <p>${p.dataCollection.content}</p>
+        <h2>${p.cookies.title}</h2>
+        <p>${p.cookies.content}</p>
+        <h2>${p.thirdParty.title}</h2>
+        <p>${p.thirdParty.content}</p>
+        <h2>${p.security.title}</h2>
+        <p>${p.security.content}</p>
+        <h2>${p.changes.title}</h2>
+        <p>${p.changes.content}</p>
+        <h2>${p.contact.title}</h2>
+        <p>${p.contact.content}</p>
+      </div>
+    `
+  }
+
+  about() {
+    const lang = getLang()
+    const i18n = t(lang)
+    const p = i18n.pages!.about
+    return `
+      <div class="tool-header">
+        <h1 class="tool-title">${p.title}</h1>
+      </div>
+      <div class="legal-page">
+        <h2>${p.mission.title}</h2>
+        <p>${p.mission.content}</p>
+        <h2>${p.whatWeDo.title}</h2>
+        <p>${p.whatWeDo.content}</p>
+        <h2>${p.features.title}</h2>
+        <ul>
+          ${p.features.items.map((item: string) => `<li>${item}</li>`).join('')}
+        </ul>
+        <h2>${p.openSource.title}</h2>
+        <p>${p.openSource.content}</p>
+        <h2>${p.contact.title}</h2>
+        <p>${p.contact.content}</p>
+      </div>
+    `
+  }
+
+  terms() {
+    const lang = getLang()
+    const i18n = t(lang)
+    const p = i18n.pages!.terms
+    return `
+      <div class="tool-header">
+        <h1 class="tool-title">${p.title}</h1>
+        <p style="color: var(--text-secondary); font-size: 0.875rem">${p.lastUpdated}</p>
+      </div>
+      <div class="legal-page">
+        <p>${p.acceptance}</p>
+        <h2>${p.use.title}</h2>
+        <p>${p.use.content}</p>
+        <h2>${p.ip.title}</h2>
+        <p>${p.ip.content}</p>
+        <h2>${p.disclaimer.title}</h2>
+        <p>${p.disclaimer.content}</p>
+        <h2>${p.changes.title}</h2>
+        <p>${p.changes.content}</p>
+        <h2>${p.governing.title}</h2>
+        <p>${p.governing.content}</p>
+      </div>
+    `
   }
 }

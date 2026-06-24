@@ -1,6 +1,9 @@
 // QR Code Generator Tool
 import { getLang, t } from '../i18n'
 
+// QRCode is loaded via CDN in index.html
+declare const QRCode: any
+
 export function qrCodeGenerator(this: any) {
   const lang = getLang()
   const i18n = t(lang)
@@ -55,28 +58,33 @@ export function bindQrCodeGeneratorEvents(router: any) {
   const generateBtn = document.getElementById('qr-generate')
   const downloadBtn = document.getElementById('qr-download')
   
-  // Simple QR Code generator (using canvas)
-  function generateQRCode(text: string, size: number, color: string): boolean {
+  // Pure browser-side QR Code generator using qrcode library
+  async function generateQRCode(text: string, size: number, color: string): Promise<boolean> {
     if (!text) return false
     
-    // Use external QR code library via CDN (qrcode-generator)
-    // For simplicity, we'll use a basic implementation
-    // In production, use a proper library like qrcode.js
-    
-    // Fallback: use QR code API
-    const apiUrl = `https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${encodeURIComponent(text)}&color=${color.slice(1)}&bgcolor=ffffff`
-    
-    qrImage.src = apiUrl
-    qrImage.style.display = 'block'
-    qrImage.width = size
-    qrImage.height = size
-    qrPlaceholder.style.display = 'none'
-    qrCanvas.style.display = 'none'
-    
-    return true
+    try {
+      // Generate QR code to canvas
+      await QRCode.toCanvas(qrCanvas, text, {
+        width: size,
+        color: {
+          dark: color,
+          light: '#ffffff'
+        },
+        margin: 2
+      })
+      
+      qrCanvas.style.display = 'block'
+      qrPlaceholder.style.display = 'none'
+      qrImage.style.display = 'none'
+      
+      return true
+    } catch (error) {
+      console.error('QR Code generation failed:', error)
+      return false
+    }
   }
   
-  generateBtn?.addEventListener('click', () => {
+  generateBtn?.addEventListener('click', async () => {
     const text = qrInput.value.trim()
     if (!text) {
       alert('Please enter text or URL')
@@ -86,28 +94,29 @@ export function bindQrCodeGeneratorEvents(router: any) {
     const size = parseInt(qrSize.value)
     const color = qrColor.value
     
-    generateQRCode(text, size, color)
+    await generateQRCode(text, size, color)
   })
   
   downloadBtn?.addEventListener('click', () => {
-    if (qrImage.style.display === 'none') {
+    if (qrCanvas.style.display === 'none') {
       alert('Generate QR code first')
       return
     }
     
+    // Download from canvas
     const link = document.createElement('a')
     link.download = 'qrcode.png'
-    link.href = qrImage.src
+    link.href = qrCanvas.toDataURL('image/png')
     link.click()
   })
   
   // Auto-generate on input change
-  qrInput.addEventListener('input', () => {
+  qrInput.addEventListener('input', async () => {
     const text = qrInput.value.trim()
     if (text.length > 0) {
       const size = parseInt(qrSize.value)
       const color = qrColor.value
-      generateQRCode(text, size, color)
+      await generateQRCode(text, size, color)
     }
   })
 }
