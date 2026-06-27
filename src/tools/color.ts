@@ -14,7 +14,7 @@ export function colorConverter(router: any) {
     
     <div class="editor-panel" style="margin-bottom: 24px">
       <div class="editor-header">
-        <span class="editor-label">Color Picker</span>
+        <span class="editor-label">${tool.colorPicker || 'Color Picker'}</span>
       </div>
       <div style="display: flex; align-items: center; gap: 16px">
         <input type="color" id="color-picker" value="#3b82f6" style="width: 80px; height: 60px; border: 2px solid var(--border); border-radius: 8px; cursor: pointer">
@@ -25,7 +25,7 @@ export function colorConverter(router: any) {
     <div class="tool-grid" style="margin-bottom: 24px">
       <div class="editor-panel">
         <div class="editor-header">
-          <span class="editor-label">HEX</span>
+          <span class="editor-label">${tool.hex || 'HEX'}</span>
           <button class="btn-small" onclick="navigator.clipboard.writeText(document.getElementById('color-hex').value)">${i18n.common.copy}</button>
         </div>
         <input id="color-hex" type="text" class="input-text" style="font-family: 'JetBrains Mono', monospace" value="#3b82f6" placeholder="#RRGGBB">
@@ -33,7 +33,7 @@ export function colorConverter(router: any) {
       
       <div class="editor-panel">
         <div class="editor-header">
-          <span class="editor-label">RGB</span>
+          <span class="editor-label">${tool.rgb || 'RGB'}</span>
           <button class="btn-small" onclick="navigator.clipboard.writeText(document.getElementById('color-rgb').value)">${i18n.common.copy}</button>
         </div>
         <input id="color-rgb" type="text" class="input-text" style="font-family: 'JetBrains Mono', monospace" value="rgb(59, 130, 246)" placeholder="rgb(r, g, b)">
@@ -41,7 +41,7 @@ export function colorConverter(router: any) {
       
       <div class="editor-panel">
         <div class="editor-header">
-          <span class="editor-label">HSL</span>
+          <span class="editor-label">${tool.hsl || 'HSL'}</span>
           <button class="btn-small" onclick="navigator.clipboard.writeText(document.getElementById('color-hsl').value)">${i18n.common.copy}</button>
         </div>
         <input id="color-hsl" type="text" class="input-text" style="font-family: 'JetBrains Mono', monospace" value="hsl(217, 91%, 60%)" placeholder="hsl(h, s%, l%)">
@@ -49,7 +49,7 @@ export function colorConverter(router: any) {
       
       <div class="editor-panel">
         <div class="editor-header">
-          <span class="editor-label">RGBA</span>
+          <span class="editor-label">${tool.rgba || 'RGBA'}</span>
           <button class="btn-small" onclick="navigator.clipboard.writeText(document.getElementById('color-rgba').value)">${i18n.common.copy}</button>
         </div>
         <input id="color-rgba" type="text" class="input-text" style="font-family: 'JetBrains Mono', monospace" value="rgba(59, 130, 246, 1)" placeholder="rgba(r, g, b, a)">
@@ -58,7 +58,7 @@ export function colorConverter(router: any) {
     
     <div class="editor-panel" style="margin-bottom: 24px">
       <div class="editor-header">
-        <span class="editor-label">Alpha (Opacity)</span>
+        <span class="editor-label">${tool.alpha || 'Alpha (Opacity)'}</span>
       </div>
       <input type="range" id="color-alpha" min="0" max="100" value="100" style="width: 100%">
       <div style="display: flex; justify-content: space-between; font-size: 13px; color: var(--text-secondary); margin-top: 4px">
@@ -69,7 +69,7 @@ export function colorConverter(router: any) {
     
     <div class="editor-panel">
       <div class="editor-header">
-        <span class="editor-label">CSS Variables</span>
+        <span class="editor-label">${tool.cssVariables || 'CSS Variables'}</span>
       </div>
       <textarea id="color-css-vars" class="editor output" style="min-height: 80px" readonly></textarea>
     </div>

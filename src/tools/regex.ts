@@ -14,11 +14,11 @@ export function regexTester(router: any) {
     
     <div class="editor-panel" style="margin-bottom: 16px">
       <div class="editor-header">
-        <span class="editor-label">Pattern</span>
+        <span class="editor-label">${tool.patternLabel || 'Pattern'}</span>
       </div>
       <div style="display: flex; align-items: center; gap: 8px">
         <span style="color: var(--text-secondary); font-family: 'JetBrains Mono', monospace;">/</span>
-        <input id="regex-pattern" type="text" class="input-text" style="font-family: 'JetBrains Mono', monospace;" placeholder="Enter regex pattern...">
+        <input id="regex-pattern" type="text" class="input-text" style="font-family: 'JetBrains Mono', monospace;" placeholder="${tool.patternPlaceholder || 'Enter regex pattern...'}">
         <span style="color: var(--text-secondary); font-family: 'JetBrains Mono', monospace;">/<span id="regex-flags-display">g</span></span>
       </div>
     </div>
@@ -27,49 +27,49 @@ export function regexTester(router: any) {
       <label class="regex-flag-label" style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 6px; cursor: pointer">
         <input type="checkbox" id="flag-g" checked class="regex-flag">
         <span style="font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--primary)">g</span>
-        <span style="font-size: 13px; color: var(--text-secondary)">Global</span>
+        <span style="font-size: 13px; color: var(--text-secondary)">${tool.flagGlobal || 'Global'}</span>
       </label>
       <label class="regex-flag-label" style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 6px; cursor: pointer">
         <input type="checkbox" id="flag-i" class="regex-flag">
         <span style="font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--primary)">i</span>
-        <span style="font-size: 13px; color: var(--text-secondary)">Case insensitive</span>
+        <span style="font-size: 13px; color: var(--text-secondary)">${tool.flagCaseInsensitive || 'Case insensitive'}</span>
       </label>
       <label class="regex-flag-label" style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 6px; cursor: pointer">
         <input type="checkbox" id="flag-m" class="regex-flag">
         <span style="font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--primary)">m</span>
-        <span style="font-size: 13px; color: var(--text-secondary)">Multiline</span>
+        <span style="font-size: 13px; color: var(--text-secondary)">${tool.flagMultiline || 'Multiline'}</span>
       </label>
       <label class="regex-flag-label" style="display: flex; align-items: center; gap: 8px; padding: 8px 12px; background: var(--bg-secondary); border: 1px solid var(--border); border-radius: 6px; cursor: pointer">
         <input type="checkbox" id="flag-s" class="regex-flag">
         <span style="font-family: 'JetBrains Mono', monospace; font-weight: 600; color: var(--primary)">s</span>
-        <span style="font-size: 13px; color: var(--text-secondary)">Dot all</span>
+        <span style="font-size: 13px; color: var(--text-secondary)">${tool.flagDotAll || 'Dot all'}</span>
       </label>
     </div>
     
     <div class="editor-panel" style="margin-bottom: 24px">
       <div class="editor-header">
-        <span class="editor-label">Test string</span>
+        <span class="editor-label">${tool.testStringLabel || 'Test string'}</span>
       </div>
-      <textarea id="regex-test-input" class="editor" style="min-height: 120px" placeholder="Enter text to test against..."></textarea>
+      <textarea id="regex-test-input" class="editor" style="min-height: 120px" placeholder="${tool.testStringPlaceholder || 'Enter text to test against...'}"></textarea>
     </div>
     
     <div id="regex-error" class="error hidden" style="margin-bottom: 16px"></div>
     
     <div class="editor-panel" style="margin-bottom: 24px">
       <div class="editor-header">
-        <span class="editor-label">Matches (<span id="regex-match-count">0</span>)</span>
+        <span class="editor-label">${tool.matchesLabel || 'Matches'} (<span id="regex-match-count">0</span>)</span>
       </div>
       <div id="regex-highlighted" class="diff-output" style="min-height: 100px; font-family: 'JetBrains Mono', monospace;">
-        <span style="color: var(--text-secondary)">Matches will be highlighted here...</span>
+        <span style="color: var(--text-secondary)">${tool.matchesPlaceholder || 'Matches will be highlighted here...'}</span>
       </div>
     </div>
     
     <div class="editor-panel">
       <div class="editor-header">
-        <span class="editor-label">Match details</span>
+        <span class="editor-label">${tool.matchDetailsLabel || 'Match details'}</span>
       </div>
       <div id="regex-match-list" style="color: var(--text-secondary); font-size: 14px">
-        No matches yet
+        ${tool.noMatchesYet || 'No matches yet'}
       </div>
     </div>
   `
@@ -78,6 +78,7 @@ export function regexTester(router: any) {
 export function bindRegexTesterEvents(router: any) {
   const lang = getLang()
   const i18n = t(lang)
+  const tool = i18n.tools.regex
   const patternInput = document.getElementById('regex-pattern') as HTMLInputElement
   const testInput = document.getElementById('regex-test-input') as HTMLTextAreaElement
   const errorDiv = document.getElementById('regex-error') as HTMLDivElement
@@ -106,9 +107,9 @@ export function bindRegexTesterEvents(router: any) {
     const flagStr = getFlags()
     
     if (!pattern || !testStr) {
-      highlightedDiv.innerHTML = '<span style="color: var(--text-secondary)">Enter pattern and test string...</span>'
+      highlightedDiv.innerHTML = '<span style="color: var(--text-secondary)">' + (tool.enterPatternAndString || 'Enter pattern and test string...') + '</span>'
       matchCountSpan.textContent = '0'
-      matchListDiv.innerHTML = '<span style="color: var(--text-secondary)">No matches yet</span>'
+      matchListDiv.innerHTML = '<span style="color: var(--text-secondary)">' + (tool.noMatchesYet || 'No matches yet') + '</span>'
       errorDiv.classList.add('hidden')
       return
     }
@@ -146,7 +147,7 @@ export function bindRegexTesterEvents(router: any) {
         highlighted = escapeHtml(testStr)
       }
       
-      highlightedDiv.innerHTML = highlighted || '<span style="color: var(--text-secondary)">No matches</span>'
+      highlightedDiv.innerHTML = highlighted || '<span style="color: var(--text-secondary)">' + (tool.noMatches || 'No matches') + '</span>'
       matchCountSpan.textContent = matches.length.toString()
       errorDiv.classList.add('hidden')
       
@@ -161,12 +162,12 @@ export function bindRegexTesterEvents(router: any) {
           </div>
         `).join('')
       } else {
-        matchListDiv.innerHTML = '<span style="color: var(--text-secondary)">No matches</span>'
+        matchListDiv.innerHTML = '<span style="color: var(--text-secondary)">' + (tool.noMatches || 'No matches') + '</span>'
       }
     } catch (e: any) {
       errorDiv.textContent = e.message
       errorDiv.classList.remove('hidden')
-      highlightedDiv.innerHTML = '<span style="color: var(--text-secondary)">Invalid regex</span>'
+      highlightedDiv.innerHTML = '<span style="color: var(--text-secondary)">' + (tool.invalidRegex || 'Invalid regex') + '</span>'
       matchCountSpan.textContent = '0'
       matchListDiv.innerHTML = '<span style="color: var(--text-secondary)">' + i18n.common.error + '</span>'
     }

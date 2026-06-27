@@ -27,10 +27,10 @@ export function markdownEditor(router: any) {
     <div class="tool-grid">
       <div class="editor-panel">
         <div class="editor-header">
-          <span class="editor-label">Markdown</span>
+          <span class="editor-label">${tool.editorLabel || 'Markdown'}</span>
           <button class="btn-small" onclick="navigator.clipboard.writeText(document.getElementById('md-input').value)" id="md-copy-btn">${i18n.common.copy}</button>
         </div>
-        <textarea id="md-input" class="editor" style="min-height: 400px" placeholder="Write your Markdown here...">## Welcome to Markdown Editor
+        <textarea id="md-input" class="editor" style="min-height: 400px" placeholder="${tool.inputPlaceholder || 'Write your Markdown here...'}">## Welcome to Markdown Editor
 
 This is a **live preview** editor.
 
@@ -50,7 +50,7 @@ console.log('Hello, Markdown!')
       
       <div class="editor-panel">
         <div class="editor-header">
-          <span class="editor-label">Preview</span>
+          <span class="editor-label">${tool.previewLabel || 'Preview'}</span>
         </div>
         <div id="md-preview" class="md-preview" style="min-height: 400px; overflow: auto"></div>
       </div>

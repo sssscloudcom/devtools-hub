@@ -9,17 +9,17 @@ export function unitConverter(router: any) {
     </div>
     
     <div style="display: flex; gap: 12px; margin-bottom: 24px; flex-wrap: wrap">
-      <button class="btn-primary unit-category-btn" data-category="length">Length</button>
-      <button class="btn-secondary unit-category-btn" data-category="weight">Weight</button>
-      <button class="btn-secondary unit-category-btn" data-category="temperature">Temperature</button>
-      <button class="btn-secondary unit-category-btn" data-category="data">Data</button>
-      <button class="btn-secondary unit-category-btn" data-category="time">Time</button>
+      <button class="btn-primary unit-category-btn" data-category="length">${tool.categoryLength || 'Length'}</button>
+      <button class="btn-secondary unit-category-btn" data-category="weight">${tool.categoryWeight || 'Weight'}</button>
+      <button class="btn-secondary unit-category-btn" data-category="temperature">${tool.categoryTemperature || 'Temperature'}</button>
+      <button class="btn-secondary unit-category-btn" data-category="data">${tool.categoryData || 'Data'}</button>
+      <button class="btn-secondary unit-category-btn" data-category="time">${tool.categoryTime || 'Time'}</button>
     </div>
     
     <div class="tool-grid" style="margin-bottom: 24px">
       <div class="editor-panel">
         <div class="editor-header">
-          <span class="editor-label">From</span>
+          <span class="editor-label">${tool.fromLabel || 'From'}</span>
         </div>
         <input id="unit-input" type="number" class="input-text" style="margin-bottom: 12px" value="1" placeholder="Enter value">
         <select id="unit-from" class="select" style="width: 100%">
@@ -36,9 +36,9 @@ export function unitConverter(router: any) {
       
       <div class="editor-panel">
         <div class="editor-header">
-          <span class="editor-label">To</span>
+          <span class="editor-label">${tool.toLabel || 'To'}</span>
         </div>
-        <input id="unit-output" type="text" class="input-text output" style="margin-bottom: 12px" readonly placeholder="Result">
+        <input id="unit-output" type="text" class="input-text output" style="margin-bottom: 12px" readonly placeholder="${tool.resultLabel || 'Result'}">
         <select id="unit-to" class="select" style="width: 100%">
           <option value="ft">Feet (ft)</option>
           <option value="m">Meters (m)</option>
