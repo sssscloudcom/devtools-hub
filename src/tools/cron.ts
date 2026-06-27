@@ -47,7 +47,7 @@ export function bindCronParserEvents(router: any) {
   function parseCron(expression: string): string {
     const parts = expression.trim().split(' ')
     if (parts.length !== 5) {
-      return 'Invalid cron expression'
+      return tool.invalidExpression || 'Invalid cron expression'
     }
     
     const [minute, hour, dayOfMonth, month, dayOfWeek] = parts
@@ -56,37 +56,37 @@ export function bindCronParserEvents(router: any) {
     
     // Minute
     if (minute === '*') {
-      desc += 'Every minute'
+      desc += tool.everyMinute || 'Every minute'
     } else if (minute.startsWith('*/')) {
-      desc += `Every ${minute.slice(2)} minutes`
+      desc += (tool.everyNMinutes || 'Every {{n}} minutes').replace('{{n}}', minute.slice(2))
     } else {
-      desc += `At minute ${minute}`
+      desc += (tool.atMinute || 'At minute {{n}}').replace('{{n}}', minute)
     }
     
     // Hour
     if (hour !== '*') {
       if (hour.startsWith('*/')) {
-        desc += `, every ${hour.slice(2)} hours`
+        desc += (tool.everyNHours || ', every {{n}} hours').replace('{{n}}', hour.slice(2))
       } else {
-        desc += ` of hour ${hour}`
+        desc += (tool.ofHour || ' of hour {{n}}').replace('{{n}}', hour)
       }
     }
     
     // Day of month
     if (dayOfMonth !== '*') {
-      desc += `, on day ${dayOfMonth} of the month`
+      desc += (tool.onDay || ', on day {{n}} of the month').replace('{{n}}', dayOfMonth)
     }
     
     // Month
     if (month !== '*') {
-      const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-      desc += `, in ${months[parseInt(month) - 1] || month}`
+      const months = tool.months || ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+      desc += (tool.inMonth || ', in {{month}}').replace('{{month}}', months[parseInt(month) - 1] || month)
     }
     
     // Day of week
     if (dayOfWeek !== '*') {
-      const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-      desc += `, on ${days[parseInt(dayOfWeek)] || dayOfWeek}`
+      const days = tool.weekdays || ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+      desc += (tool.onWeekday || ', on {{day}}').replace('{{day}}', days[parseInt(dayOfWeek)] || dayOfWeek)
     }
     
     return desc

@@ -166,6 +166,17 @@ export const translations = {
         fieldDay: 'Day',
         fieldMonth: 'Month',
         fieldWeekday: 'Weekday',
+        invalidExpression: 'Invalid cron expression',
+        everyMinute: 'Every minute',
+        everyNMinutes: 'Every {{n}} minutes',
+        atMinute: 'At minute {{n}}',
+        everyNHours: ', every {{n}} hours',
+        ofHour: ' of hour {{n}}',
+        onDay: ', on day {{n}} of the month',
+        inMonth: ', in {{month}}',
+        onWeekday: ', on {{day}}',
+        months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+        weekdays: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
       },
       
       qrcode: {
@@ -178,6 +189,8 @@ export const translations = {
         generate: 'Generate',
         download: 'Download',
         placeholder: 'QR code will appear here',
+        enterText: 'Please enter text or URL',
+        generateFirst: 'Generate QR code first',
       },
     },
     
@@ -654,6 +667,8 @@ export const translations = {
         generate: 'Generar',
         download: 'Descargar',
         placeholder: 'QR aparecerá aquí',
+enterText: 'Ingrese texto o URL',
+        generateFirst: 'Genere código QR primero',
       },
     },
     
@@ -892,6 +907,8 @@ export const translations = {
         generate: '生成',
         download: 'ダウンロード',
         placeholder: 'QRコードがここに表示されます',
+enterText: 'テキストまたはURLを入力してください',
+        generateFirst: '先にQRコードを生成してください',
       },
     },
     
@@ -1131,6 +1148,8 @@ export const translations = {
         generate: 'Generieren',
         download: 'Herunterladen',
         placeholder: 'QR-Code erscheint hier',
+enterText: 'Bitte Text oder URL eingeben',
+        generateFirst: 'QR-Code zuerst generieren',
       },
     },
     
@@ -1370,6 +1389,8 @@ export const translations = {
         generate: 'Générer',
         download: 'Télécharger',
         placeholder: 'Le code QR apparaîtra ici',
+enterText: 'Veuillez entrer du texte ou une URL',
+        generateFirst: 'Générez d\'abord le code QR',
       },
     },
     
@@ -1609,6 +1630,8 @@ export const translations = {
         generate: 'Сгенерировать',
         download: 'Скачать',
         placeholder: 'QR код появится здесь',
+enterText: 'Введите текст или URL',
+        generateFirst: 'Сначала сгенерируйте QR-код',
       },
     },
     
@@ -1848,6 +1871,8 @@ export const translations = {
         generate: 'Gerar',
         download: 'Baixar',
         placeholder: 'QR code aparecerá aqui',
+enterText: 'Insira texto ou URL',
+        generateFirst: 'Gere o código QR primeiro',
       },
     },
     
@@ -2087,6 +2112,8 @@ export const translations = {
         generate: 'Buat',
         download: 'Unduh',
         placeholder: 'Kode QR akan muncul di sini',
+enterText: 'Masukkan teks atau URL',
+        generateFirst: 'Buat kode QR terlebih dahulu',
       },
     },
     
@@ -2326,6 +2353,8 @@ export const translations = {
         generate: 'إنشاء',
         download: 'تنزيل',
         placeholder: 'سوف يظهر رمز QR هنا',
+enterText: 'الرجاء إدخال نص أو رابط',
+        generateFirst: 'قم بإنشاء رمز QR أولاً',
       },
     },
     

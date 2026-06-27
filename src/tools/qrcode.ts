@@ -87,7 +87,7 @@ export function bindQrCodeGeneratorEvents(router: any) {
   generateBtn?.addEventListener('click', async () => {
     const text = qrInput.value.trim()
     if (!text) {
-      alert('Please enter text or URL')
+      alert(tool.enterText || 'Please enter text or URL')
       return
     }
     
@@ -99,7 +99,7 @@ export function bindQrCodeGeneratorEvents(router: any) {
   
   downloadBtn?.addEventListener('click', () => {
     if (qrCanvas.style.display === 'none') {
-      alert('Generate QR code first')
+      alert(tool.generateFirst || 'Generate QR code first')
       return
     }
     
