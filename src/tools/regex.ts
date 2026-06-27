@@ -4,11 +4,12 @@ import { getLang, t } from '../i18n'
 export function regexTester(router: any) {
   const lang = getLang()
   const i18n = t(lang)
+  const tool = i18n.tools.regex
   
   return `
     <div class="tool-header">
-      <h1 class="tool-title">Regex Tester</h1>
-      <p class="tool-desc">Test regular expressions with live matching and highlighting</p>
+      <h1 class="tool-title">${tool.title}</h1>
+      <p class="tool-desc">${tool.desc}</p>
     </div>
     
     <div class="editor-panel" style="margin-bottom: 16px">
@@ -75,6 +76,8 @@ export function regexTester(router: any) {
 }
 
 export function bindRegexTesterEvents(router: any) {
+  const lang = getLang()
+  const i18n = t(lang)
   const patternInput = document.getElementById('regex-pattern') as HTMLInputElement
   const testInput = document.getElementById('regex-test-input') as HTMLTextAreaElement
   const errorDiv = document.getElementById('regex-error') as HTMLDivElement
@@ -165,7 +168,7 @@ export function bindRegexTesterEvents(router: any) {
       errorDiv.classList.remove('hidden')
       highlightedDiv.innerHTML = '<span style="color: var(--text-secondary)">Invalid regex</span>'
       matchCountSpan.textContent = '0'
-      matchListDiv.innerHTML = '<span style="color: var(--text-secondary)">Error</span>'
+      matchListDiv.innerHTML = '<span style="color: var(--text-secondary)">' + i18n.common.error + '</span>'
     }
   }
   

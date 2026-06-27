@@ -3,107 +3,39 @@ import { Router } from './router'
 import { getLang, setLang, t } from './i18n'
 
 // SEO Meta Tags 更新
-const seoData: Record<string, { title: string; description: string; keywords: string }> = {
-  '/': {
-    title: 'JSON Formatter and Validator - Free Online JSON Tool',
-    description: 'Free online JSON formatter, validator, and beautifier. Format, minify, and validate JSON data instantly. No signup, 100% browser-side processing.',
-    keywords: 'json formatter, json validator, json beautifier, online json tool'
-  },
-  '/json': {
-    title: 'JSON Formatter - Format, Validate and Beautify JSON',
-    description: 'Free online JSON formatter. Format, validate, minify and beautify JSON data. Instant processing, no signup required.',
-    keywords: 'json formatter, json validator, json beautifier, json minify'
-  },
-  '/xml': {
-    title: 'XML Formatter - Format and Beautify XML Documents',
-    description: 'Free online XML formatter. Format and beautify XML documents instantly. Browser-side processing.',
-    keywords: 'xml formatter, xml beautifier, xml validator, online xml tool'
-  },
-  '/base64': {
-    title: 'Base64 Encoder/Decoder - Online Base64 Tool',
-    description: 'Free online Base64 encoder and decoder. Encode text to Base64 or decode Base64 to text instantly.',
-    keywords: 'base64 encoder, base64 decoder, base64 online, encode decode'
-  },
-  '/url': {
-    title: 'URL Encoder/Decoder - Encode URL Components',
-    description: 'Free online URL encoder and decoder. Encode or decode URL components and query strings.',
-    keywords: 'url encoder, url decoder, encode url, url encoding'
-  },
-  '/hash': {
-    title: 'Hash Generator - SHA-256 and SHA-1 Hash Tool',
-    description: 'Free online hash generator. Generate SHA-256 and SHA-1 hashes from text instantly.',
-    keywords: 'hash generator, sha256, sha-1, hash online'
-  },
-  '/timestamp': {
-    title: 'Unix Timestamp Converter - Date to Timestamp',
-    description: 'Free online Unix timestamp converter. Convert timestamps to dates and vice versa.',
-    keywords: 'timestamp converter, unix timestamp, epoch converter'
-  },
-  '/diff': {
-    title: 'Text Diff Tool - Compare Two Texts',
-    description: 'Free online diff tool. Compare two texts and highlight differences side by side.',
-    keywords: 'diff tool, text compare, compare texts, diff online'
-  },
-  '/regex': {
-    title: 'Regex Tester - Test Regular Expressions',
-    description: 'Free online regex tester. Test regular expressions with live matching and highlighting.',
-    keywords: 'regex tester, regular expression, regex online, test regex'
-  },
-  '/color': {
-    title: 'Color Converter - HEX RGB HSL Conversion',
-    description: 'Free online color converter. Convert colors between HEX, RGB, HSL, RGBA formats.',
-    keywords: 'color converter, hex to rgb, rgb to hex, color tool'
-  },
-  '/unit': {
-    title: 'Unit Converter - Length Weight Temperature',
-    description: 'Free online unit converter. Convert length, weight, temperature, data, time units.',
-    keywords: 'unit converter, convert units, length converter, weight converter'
-  },
-  '/markdown': {
-    title: 'Markdown Editor - Write and Preview Markdown',
-    description: 'Free online Markdown editor. Write and preview Markdown in real-time with syntax highlighting.',
-    keywords: 'markdown editor, markdown preview, md editor, online markdown'
-  },
-  '/jwt': {
-    title: 'JWT Decoder - Decode JSON Web Tokens',
-    description: 'Free online JWT decoder. Decode JSON Web Tokens and view header, payload, signature.',
-    keywords: 'jwt decoder, jwt token, decode jwt, jwt online'
-  },
-  '/uuid': {
-    title: 'UUID Generator - Generate UUID v4',
-    description: 'Free online UUID generator. Generate random UUID v4 identifiers instantly.',
-    keywords: 'uuid generator, uuid v4, generate uuid, guid generator'
-  },
-  '/cron': {
-    title: 'Cron Parser - Parse Cron Expressions',
-    description: 'Free online cron parser. Parse cron expressions and get human-readable descriptions.',
-    keywords: 'cron parser, cron expression, cron schedule, crontab'
-  },
-  '/qrcode': {
-    title: 'QR Code Generator - Generate QR Codes',
-    description: 'Free online QR code generator. Generate QR codes from text or URLs instantly.',
-    keywords: 'qr code generator, generate qr, qr online, qr code'
-  },
-  '/privacy': {
-    title: 'Privacy Policy - JSON Tools',
-    description: 'Learn how JSON Tools handles your data. 100% browser-side processing, no data collection, no tracking cookies.',
-    keywords: 'privacy policy, data protection, browser-side processing'
-  },
-  '/about': {
-    title: 'About JSON Tools - Free Online Developer Utilities',
-    description: 'JSON Tools provides 15+ free online developer utilities. Privacy-first, instant results, multi-language support.',
-    keywords: 'about json tools, free developer tools, online utilities'
-  },
-  '/terms': {
-    title: 'Terms of Service - JSON Tools',
-    description: 'Terms of service for JSON Tools. Free online developer utilities with browser-side processing.',
-    keywords: 'terms of service, usage terms, legal'
-  }
-}
-
 function updateSEO(path: string) {
   const lang = getLang()
-  const data = seoData[path] || seoData['/']
+  const i18n = t(lang)
+  const seo = i18n.seo
+  
+  // Update HTML lang attribute
+  document.documentElement.lang = lang
+  
+  // Map path to SEO key
+  const pathToKey: Record<string, keyof typeof seo> = {
+    '/': 'home',
+    '/json': 'json',
+    '/xml': 'xml',
+    '/base64': 'base64',
+    '/url': 'url',
+    '/hash': 'hash',
+    '/timestamp': 'timestamp',
+    '/diff': 'diff',
+    '/regex': 'regex',
+    '/color': 'color',
+    '/unit': 'unit',
+    '/markdown': 'markdown',
+    '/jwt': 'jwt',
+    '/uuid': 'uuid',
+    '/cron': 'cron',
+    '/qrcode': 'qrcode',
+    '/privacy': 'privacy',
+    '/about': 'about',
+    '/terms': 'terms',
+  }
+  
+  const key = pathToKey[path] || 'home'
+  const data = seo[key]
   
   // Update title
   document.title = data.title

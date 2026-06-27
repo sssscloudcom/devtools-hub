@@ -60,8 +60,10 @@ export function bindUuidGeneratorEvents(router: any) {
     if (!text.trim()) return
     try {
       await navigator.clipboard.writeText(text)
+      const lang = getLang()
+      const i18n = t(lang)
       const originalText = copyAllBtn.textContent
-      copyAllBtn.textContent = '已复制!'
+      copyAllBtn.textContent = i18n.common.copied
       setTimeout(() => {
         copyAllBtn.textContent = originalText
       }, 1500)

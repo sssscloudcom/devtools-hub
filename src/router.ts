@@ -145,7 +145,7 @@ export class Router {
           base64Output.value = decodeURIComponent(escape(atob(base64Input.value)))
         }
       } catch (e: any) {
-        base64Output.value = 'Error: ' + e.message
+        base64Output.value = i18n.common.error + ': ' + e.message
       }
     })
 
@@ -161,7 +161,7 @@ export class Router {
           ? encodeURIComponent(urlInput.value)
           : decodeURIComponent(urlInput.value)
       } catch (e: any) {
-        urlOutput.value = 'Error: ' + e.message
+        urlOutput.value = i18n.common.error + ': ' + e.message
       }
     })
 
@@ -241,7 +241,7 @@ export class Router {
         // 检查解析错误
         const parseError = xmlDoc.querySelector('parsererror')
         if (parseError) {
-          throw new Error('Invalid XML: ' + parseError.textContent?.substring(0, 100))
+          throw new Error(i18n.common.invalidXml + ': ' + parseError.textContent?.substring(0, 100))
         }
         
         // 格式化XML
@@ -296,7 +296,7 @@ export class Router {
         const copyBtn = document.getElementById('xml-copy-btn')
         if (copyBtn) copyBtn.textContent = i18n.common.copy
       } catch (e: any) {
-        xmlOutput.value = 'Error: ' + e.message
+        xmlOutput.value = i18n.common.error + ': ' + e.message
       }
     })
 
@@ -308,7 +308,7 @@ export class Router {
         const minified = xml.replace(/\s+/g, ' ').replace(/\s*</g, '<').replace(/\s*>/g, '>').replace(/<\s+/g, '<').replace(/>\s+/g, '>')
         xmlOutput.value = minified
       } catch (e: any) {
-        xmlOutput.value = 'Error: ' + e.message
+        xmlOutput.value = i18n.common.error + ': ' + e.message
       }
     })
 
@@ -337,7 +337,7 @@ export class Router {
         }
       }
       
-      diffOutput.innerHTML = result || '<span style="color: var(--text-secondary)">No differences found</span>'
+      diffOutput.innerHTML = result || `<span style="color: var(--text-secondary)">${i18n.tools.diff.noDifferences || 'No differences found'}</span>`
     })
     
     // New tools
@@ -443,7 +443,7 @@ export class Router {
             <span class="editor-label">${i18n.common.input}</span>
             <button class="btn-small" onclick="document.getElementById('xml-input').value='';document.getElementById('xml-output').value=''">${i18n.common.clear}</button>
           </div>
-          <textarea id="xml-input" class="editor" placeholder="Paste your XML here..."></textarea>
+          <textarea id="xml-input" class="editor" placeholder='${i18n.tools.xmlFormatter.inputPlaceholder || "Paste your XML here..."}'></textarea>
         </div>
         
         <div class="editor-panel">
@@ -451,7 +451,7 @@ export class Router {
             <span class="editor-label">${i18n.common.output}</span>
             <button class="btn-small" onclick="navigator.clipboard.writeText(document.getElementById('xml-output').value)" id="xml-copy-btn">${i18n.common.copy}</button>
           </div>
-          <textarea id="xml-output" class="editor output" readonly placeholder="Formatted XML will appear here..."></textarea>
+          <textarea id="xml-output" class="editor output" readonly placeholder='${i18n.tools.xmlFormatter.outputPlaceholder || "Formatted XML will appear here..."}'></textarea>
         </div>
       </div>
       

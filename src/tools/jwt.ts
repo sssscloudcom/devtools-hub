@@ -47,6 +47,8 @@ export function jwtDecoder(this: any) {
 }
 
 export function bindJwtDecoderEvents(router: any) {
+  const lang = getLang()
+  const i18n = t(lang)
   const jwtInput = document.getElementById('jwt-input') as HTMLTextAreaElement
   const jwtHeader = document.getElementById('jwt-header') as HTMLTextAreaElement
   const jwtPayload = document.getElementById('jwt-payload') as HTMLTextAreaElement
@@ -60,7 +62,7 @@ export function bindJwtDecoderEvents(router: any) {
     try {
       const parts = token.split('.')
       if (parts.length !== 3) {
-        throw new Error('Invalid JWT format')
+        throw new Error(i18n.common.invalidJwt)
       }
       
       // Decode header
@@ -78,7 +80,7 @@ export function bindJwtDecoderEvents(router: any) {
       jwtHeader.value = ''
       jwtPayload.value = ''
       jwtSignature.value = ''
-      alert('Invalid JWT token: ' + e.message)
+      alert(i18n.common.error + ': ' + e.message)
     }
   })
 }

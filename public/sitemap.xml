@@ -11,6 +11,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/?lang=ar"/>
   </url>
   
   <!-- Format Tools -->
@@ -22,6 +28,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/json?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/json?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/json?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/json?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/json?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/json?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/json?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/json?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/json?lang=ar"/>
   </url>
   
   <url>
@@ -32,6 +44,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/xml?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/xml?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/xml?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/xml?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/xml?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/xml?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/xml?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/xml?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/xml?lang=ar"/>
   </url>
   
   <url>
@@ -42,6 +60,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/markdown?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/markdown?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/markdown?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/markdown?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/markdown?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/markdown?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/markdown?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/markdown?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/markdown?lang=ar"/>
   </url>
   
   <url>
@@ -52,6 +76,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/diff?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/diff?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/diff?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/diff?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/diff?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/diff?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/diff?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/diff?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/diff?lang=ar"/>
   </url>
   
   <!-- Encode Tools -->
@@ -63,6 +93,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/base64?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/base64?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/base64?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/base64?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/base64?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/base64?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/base64?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/base64?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/base64?lang=ar"/>
   </url>
   
   <url>
@@ -73,6 +109,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/url?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/url?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/url?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/url?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/url?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/url?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/url?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/url?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/url?lang=ar"/>
   </url>
   
   <url>
@@ -83,6 +125,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/hash?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/hash?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/hash?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/hash?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/hash?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/hash?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/hash?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/hash?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/hash?lang=ar"/>
   </url>
   
   <url>
@@ -93,6 +141,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/timestamp?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/timestamp?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/timestamp?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/timestamp?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/timestamp?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/timestamp?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/timestamp?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/timestamp?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/timestamp?lang=ar"/>
   </url>
   
   <!-- Developer Tools -->
@@ -104,6 +158,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/regex?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/regex?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/regex?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/regex?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/regex?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/regex?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/regex?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/regex?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/regex?lang=ar"/>
   </url>
   
   <url>
@@ -114,6 +174,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/jwt?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/jwt?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/jwt?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/jwt?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/jwt?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/jwt?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/jwt?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/jwt?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/jwt?lang=ar"/>
   </url>
   
   <url>
@@ -124,6 +190,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/uuid?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/uuid?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/uuid?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/uuid?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/uuid?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/uuid?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/uuid?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/uuid?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/uuid?lang=ar"/>
   </url>
   
   <url>
@@ -134,6 +206,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/cron?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/cron?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/cron?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/cron?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/cron?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/cron?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/cron?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/cron?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/cron?lang=ar"/>
   </url>
   
   <!-- Convert Tools -->
@@ -145,6 +223,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/color?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/color?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/color?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/color?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/color?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/color?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/color?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/color?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/color?lang=ar"/>
   </url>
   
   <url>
@@ -155,6 +239,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/unit?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/unit?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/unit?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/unit?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/unit?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/unit?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/unit?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/unit?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/unit?lang=ar"/>
   </url>
   
   <!-- Generate Tools -->
@@ -166,6 +256,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/qrcode?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/qrcode?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/qrcode?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/qrcode?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/qrcode?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/qrcode?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/qrcode?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/qrcode?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/qrcode?lang=ar"/>
   </url>
   
   <!-- Legal Pages -->
@@ -177,6 +273,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/privacy?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/privacy?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/privacy?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/privacy?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/privacy?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/privacy?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/privacy?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/privacy?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/privacy?lang=ar"/>
   </url>
   
   <url>
@@ -187,6 +289,12 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/about?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/about?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/about?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/about?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/about?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/about?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/about?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/about?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/about?lang=ar"/>
   </url>
   
   <url>
@@ -197,5 +305,11 @@
     <xhtml:link rel="alternate" hreflang="zh" href="https://tools.nextapi.pro/terms?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://tools.nextapi.pro/terms?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ja" href="https://tools.nextapi.pro/terms?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://tools.nextapi.pro/terms?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://tools.nextapi.pro/terms?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://tools.nextapi.pro/terms?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://tools.nextapi.pro/terms?lang=pt"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://tools.nextapi.pro/terms?lang=id"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://tools.nextapi.pro/terms?lang=ar"/>
   </url>
 </urlset>

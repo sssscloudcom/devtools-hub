@@ -2,10 +2,14 @@
 import { getLang, t } from '../i18n'
 
 export function markdownEditor(router: any) {
+  const lang = getLang()
+  const i18n = t(lang)
+  const tool = i18n.tools.markdown
+  
   return `
     <div class="tool-header">
-      <h1 class="tool-title">Markdown Editor</h1>
-      <p class="tool-desc">Write and preview Markdown in real-time</p>
+      <h1 class="tool-title">${tool.title}</h1>
+      <p class="tool-desc">${tool.desc}</p>
     </div>
     
     <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap">
@@ -17,14 +21,14 @@ export function markdownEditor(router: any) {
       <button class="btn-small" id="md-code" title="Code">{'<>'}</button>
       <button class="btn-small" id="md-list" title="List">• List</button>
       <button class="btn-small" id="md-quote" title="Quote">" Quote</button>
-      <button class="btn-small" id="md-clear" title="Clear">Clear</button>
+      <button class="btn-small" id="md-clear" title="Clear">${i18n.common.clear}</button>
     </div>
     
     <div class="tool-grid">
       <div class="editor-panel">
         <div class="editor-header">
           <span class="editor-label">Markdown</span>
-          <button class="btn-small" onclick="navigator.clipboard.writeText(document.getElementById('md-input').value)">Copy</button>
+          <button class="btn-small" onclick="navigator.clipboard.writeText(document.getElementById('md-input').value)" id="md-copy-btn">${i18n.common.copy}</button>
         </div>
         <textarea id="md-input" class="editor" style="min-height: 400px" placeholder="Write your Markdown here...">## Welcome to Markdown Editor
 

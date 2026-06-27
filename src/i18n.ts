@@ -37,6 +37,9 @@ export const translations = {
       minify: 'Minify',
       encode: 'Encode',
       decode: 'Decode',
+      error: 'Error',
+      invalidXml: 'Invalid XML',
+      invalidJwt: 'Invalid JWT format',
     },
     
     tools: {
@@ -90,12 +93,15 @@ export const translations = {
         input2Label: 'Modified Text',
         input1Placeholder: 'Paste original text here...',
         input2Placeholder: 'Paste modified text here...',
+        noDifferences: 'No differences found',
       },
       
       xmlFormatter: {
         title: 'XML Formatter',
         desc: 'Format and beautify XML documents.',
         comingSoon: 'This tool is under development.',
+        inputPlaceholder: 'Paste your XML here...',
+        outputPlaceholder: 'Formatted XML will appear here...',
       },
       
       regex: {
@@ -179,6 +185,28 @@ export const translations = {
       privacy: '🔒 100% browser-side processing — your data never leaves your computer',
     },
     
+    seo: {
+      home: { title: 'JSON Formatter and Validator - Free Online JSON Tool', description: 'Free online JSON formatter, validator, and beautifier. Format, minify, and validate JSON data instantly. No signup, 100% browser-side processing.', keywords: 'json formatter, json validator, json beautifier, online json tool' },
+      json: { title: 'JSON Formatter - Format, Validate and Beautify JSON', description: 'Free online JSON formatter. Format, validate, minify and beautify JSON data. Instant processing, no signup required.', keywords: 'json formatter, json validator, json beautifier, json minify' },
+      xml: { title: 'XML Formatter - Format and Beautify XML Documents', description: 'Free online XML formatter. Format and beautify XML documents instantly. Browser-side processing.', keywords: 'xml formatter, xml beautifier, xml validator, online xml tool' },
+      base64: { title: 'Base64 Encoder/Decoder - Online Base64 Tool', description: 'Free online Base64 encoder and decoder. Encode text to Base64 or decode Base64 to text instantly.', keywords: 'base64 encoder, base64 decoder, base64 online, encode decode' },
+      url: { title: 'URL Encoder/Decoder - Encode URL Components', description: 'Free online URL encoder and decoder. Encode or decode URL components and query strings.', keywords: 'url encoder, url decoder, encode url, url encoding' },
+      hash: { title: 'Hash Generator - SHA-256 and SHA-1 Hash Tool', description: 'Free online hash generator. Generate SHA-256 and SHA-1 hashes from text instantly.', keywords: 'hash generator, sha256, sha-1, hash online' },
+      timestamp: { title: 'Unix Timestamp Converter - Date to Timestamp', description: 'Free online Unix timestamp converter. Convert timestamps to dates and vice versa.', keywords: 'timestamp converter, unix timestamp, epoch converter' },
+      diff: { title: 'Text Diff Tool - Compare Two Texts', description: 'Free online diff tool. Compare two texts and highlight differences side by side.', keywords: 'diff tool, text compare, compare texts, diff online' },
+      regex: { title: 'Regex Tester - Test Regular Expressions', description: 'Free online regex tester. Test regular expressions with live matching and highlighting.', keywords: 'regex tester, regular expression, regex online, test regex' },
+      color: { title: 'Color Converter - HEX RGB HSL Conversion', description: 'Free online color converter. Convert colors between HEX, RGB, HSL, RGBA formats.', keywords: 'color converter, hex to rgb, rgb to hex, color tool' },
+      unit: { title: 'Unit Converter - Length Weight Temperature', description: 'Free online unit converter. Convert length, weight, temperature, data, time units.', keywords: 'unit converter, convert units, length converter, weight converter' },
+      markdown: { title: 'Markdown Editor - Write and Preview Markdown', description: 'Free online Markdown editor. Write and preview Markdown in real-time with syntax highlighting.', keywords: 'markdown editor, markdown preview, md editor, online markdown' },
+      jwt: { title: 'JWT Decoder - Decode JSON Web Tokens', description: 'Free online JWT decoder. Decode JSON Web Tokens and view header, payload, signature.', keywords: 'jwt decoder, jwt token, decode jwt, jwt online' },
+      uuid: { title: 'UUID Generator - Generate UUID v4', description: 'Free online UUID generator. Generate random UUID v4 identifiers instantly.', keywords: 'uuid generator, uuid v4, generate uuid, guid generator' },
+      cron: { title: 'Cron Parser - Parse Cron Expressions', description: 'Free online cron parser. Parse cron expressions and get human-readable descriptions.', keywords: 'cron parser, cron expression, cron schedule, crontab' },
+      qrcode: { title: 'QR Code Generator - Generate QR Codes', description: 'Free online QR code generator. Generate QR codes from text or URLs instantly.', keywords: 'qr code generator, generate qr, qr online, qr code' },
+      privacy: { title: 'Privacy Policy - JSON Tools', description: 'Learn how JSON Tools handles your data. 100% browser-side processing, no data collection, no tracking cookies.', keywords: 'privacy policy, data protection, browser-side processing' },
+      about: { title: 'About JSON Tools - Free Online Developer Utilities', description: 'JSON Tools provides 15+ free online developer utilities. Privacy-first, instant results, multi-language support.', keywords: 'about json tools, free developer tools, online utilities' },
+      terms: { title: 'Terms of Service - JSON Tools', description: 'Terms of service for JSON Tools. Free online developer utilities with browser-side processing.', keywords: 'terms of service, usage terms, legal' },
+    },
+    
     pages: {
       privacy: {
         title: 'Privacy Policy',
@@ -250,6 +278,9 @@ export const translations = {
       minify: '压缩',
       encode: '编码',
       decode: '解码',
+      error: '错误',
+      invalidXml: '无效的XML',
+      invalidJwt: '无效的JWT格式',
     },
     
     tools: {
@@ -392,6 +423,28 @@ export const translations = {
       privacy: '🔒 100% 浏览器端处理 — 您的数据不会离开电脑',
     },
     
+    seo: {
+      home: { title: 'JSON 格式化与验证 - 免费在线 JSON 工具', description: '免费在线 JSON 格式化、验证和美化工具。即时格式化、压缩和验证 JSON 数据。无需注册，100% 浏览器端处理。', keywords: 'json 格式化, json 验证, json 美化, 在线 json 工具' },
+      json: { title: 'JSON 格式化 - 格式化、验证和美化 JSON', description: '免费在线 JSON 格式化。格式化、验证、压缩和美化 JSON 数据。即时处理，无需注册。', keywords: 'json 格式化, json 验证, json 美化, json 压缩' },
+      xml: { title: 'XML 格式化 - 格式化和美化 XML 文档', description: '免费在线 XML 格式化。即时格式化和美化 XML 文档。浏览器端处理。', keywords: 'xml 格式化, xml 美化, xml 验证, 在线 xml 工具' },
+      base64: { title: 'Base64 编码/解码 - 在线 Base64 工具', description: '免费在线 Base64 编码和解码。即时将文本编码为 Base64 或将 Base64 解码为文本。', keywords: 'base64 编码, base64 解码, base64 在线, 编码解码' },
+      url: { title: 'URL 编码/解码 - 编码 URL 组件', description: '免费在线 URL 编码和解码。编码或解码 URL 组件和查询字符串。', keywords: 'url 编码, url 解码, 编码 url, url 编码' },
+      hash: { title: '哈希生成器 - SHA-256 和 SHA-1 哈希工具', description: '免费在线哈希生成器。即时从文本生成 SHA-256 和 SHA-1 哈希值。', keywords: '哈希生成器, sha256, sha-1, 哈希在线' },
+      timestamp: { title: 'Unix 时间戳转换 - 日期转时间戳', description: '免费在线 Unix 时间戳转换。将时间戳转换为日期，反之亦然。', keywords: '时间戳转换, unix 时间戳, epoch 转换' },
+      diff: { title: '文本对比工具 - 对比两个文本', description: '免费在线对比工具。对比两个文本并并排高亮差异。', keywords: '对比工具, 文本比较, 对比文本, 在线对比' },
+      regex: { title: '正则测试器 - 测试正则表达式', description: '免费在线正则测试器。实时匹配和高亮测试正则表达式。', keywords: '正则测试器, 正则表达式, 正则在线, 测试正则' },
+      color: { title: '颜色转换 - HEX RGB HSL 转换', description: '免费在线颜色转换器。在 HEX、RGB、HSL、RGBA 格式之间转换颜色。', keywords: '颜色转换, hex 转 rgb, rgb 转 hex, 颜色工具' },
+      unit: { title: '单位转换 - 长度重量温度', description: '免费在线单位转换器。转换长度、重量、温度、数据、时间单位。', keywords: '单位转换, 转换单位, 长度转换, 重量转换' },
+      markdown: { title: 'Markdown 编辑器 - 编写和预览 Markdown', description: '免费在线 Markdown 编辑器。实时编写和预览 Markdown，支持语法高亮。', keywords: 'markdown 编辑器, markdown 预览, md 编辑器, 在线 markdown' },
+      jwt: { title: 'JWT 解析 - 解析 JSON Web Token', description: '免费在线 JWT 解析器。解析 JSON Web Token 并查看 header、payload、signature。', keywords: 'jwt 解析, jwt token, 解析 jwt, jwt 在线' },
+      uuid: { title: 'UUID 生成器 - 生成 UUID v4', description: '免费在线 UUID 生成器。即时生成随机 UUID v4 标识符。', keywords: 'uuid 生成器, uuid v4, 生成 uuid, guid 生成器' },
+      cron: { title: 'Cron 解析器 - 解析 Cron 表达式', description: '免费在线 Cron 解析器。解析 Cron 表达式并获取人类可读描述。', keywords: 'cron 解析器, cron 表达式, cron 计划, crontab' },
+      qrcode: { title: '二维码生成器 - 生成二维码', description: '免费在线二维码生成器。即时从文本或 URL 生成二维码。', keywords: '二维码生成器, 生成二维码, 二维码在线, 二维码' },
+      privacy: { title: '隐私政策 - JSON 工具', description: '了解 JSON 工具如何处理您的数据。100% 浏览器端处理，无数据收集，无追踪 Cookie。', keywords: '隐私政策, 数据保护, 浏览器端处理' },
+      about: { title: '关于 JSON 工具 - 免费在线开发者工具', description: 'JSON 工具提供 15+ 免费在线开发者工具。隐私优先，即时结果，多语言支持。', keywords: '关于 json 工具, 免费开发者工具, 在线工具' },
+      terms: { title: '服务条款 - JSON 工具', description: 'JSON 工具的服务条款。免费在线开发者工具，浏览器端处理。', keywords: '服务条款, 使用条款, 法律' },
+    },
+    
     pages: {
       privacy: {
         title: '隐私政策',
@@ -463,6 +516,9 @@ export const translations = {
       minify: 'Minificar',
       encode: 'Codificar',
       decode: 'Decodificar',
+      error: 'Error',
+      invalidXml: 'XML inválido',
+      invalidJwt: 'Formato JWT inválido',
     },
     
     tools: {
@@ -605,6 +661,28 @@ export const translations = {
       privacy: '🔒 100% procesamiento del lado del navegador — tus datos nunca abandonan tu computadora',
     },
     
+    seo: {
+      home: { title: 'Formateador y Validador JSON - Herramienta JSON en Línea Gratuita', description: 'Formateador, validador y embellecedor JSON en línea gratuito. Formatea, minifica y valida datos JSON al instante. Sin registro, 100% procesamiento en el navegador.', keywords: 'formateador json, validador json, embellecedor json, herramienta json en línea' },
+      json: { title: 'Formateador JSON - Formatear, Validar y Embellecer JSON', description: 'Formateador JSON en línea gratuito. Formatea, valida, minifica y embellece datos JSON. Procesamiento instantáneo, sin registro requerido.', keywords: 'formateador json, validador json, embellecedor json, json minificar' },
+      xml: { title: 'Formateador XML - Formatear y Embellecer Documentos XML', description: 'Formateador XML en línea gratuito. Formatea y embellece documentos XML al instante. Procesamiento en el navegador.', keywords: 'formateador xml, embellecedor xml, validador xml, herramienta xml en línea' },
+      base64: { title: 'Codificador/Decodificador Base64 - Herramienta Base64 en Línea', description: 'Codificador y decodificador Base64 en línea gratuito. Codifica texto a Base64 o decodifica Base64 a texto al instante.', keywords: 'codificador base64, decodificador base64, base64 en línea, codificar decodificar' },
+      url: { title: 'Codificador/Decodificador URL - Codificar Componentes URL', description: 'Codificador y decodificador URL en línea gratuito. Codifica o decodifica componentes URL y cadenas de consulta.', keywords: 'codificador url, decodificador url, codificar url, codificación url' },
+      hash: { title: 'Generador de Hash - Herramienta de Hash SHA-256 y SHA-1', description: 'Generador de hash en línea gratuito. Genera hashes SHA-256 y SHA-1 a partir de texto al instante.', keywords: 'generador hash, sha256, sha-1, hash en línea' },
+      timestamp: { title: 'Convertidor de Timestamp Unix - Fecha a Timestamp', description: 'Convertidor de timestamp Unix en línea gratuito. Convierte timestamps a fechas y viceversa.', keywords: 'convertidor timestamp, unix timestamp, convertidor epoch' },
+      diff: { title: 'Herramienta de Diff de Texto - Comparar Dos Textos', description: 'Herramienta diff en línea gratuita. Compara dos textos y resalta diferencias lado a lado.', keywords: 'herramienta diff, comparar texto, comparar textos, diff en línea' },
+      regex: { title: 'Probador de Regex - Probar Expresiones Regulares', description: 'Probador de regex en línea gratuito. Prueba expresiones regulares con coincidencias en vivo y resaltado.', keywords: 'probador regex, expresión regular, regex en línea, probar regex' },
+      color: { title: 'Convertidor de Color - Conversión HEX RGB HSL', description: 'Convertidor de color en línea gratuito. Convierte colores entre formatos HEX, RGB, HSL, RGBA.', keywords: 'convertidor color, hex a rgb, rgb a hex, herramienta color' },
+      unit: { title: 'Convertidor de Unidades - Longitud Peso Temperatura', description: 'Convertidor de unidades en línea gratuito. Convierte unidades de longitud, peso, temperatura, datos, tiempo.', keywords: 'convertidor unidades, convertir unidades, convertidor longitud, convertidor peso' },
+      markdown: { title: 'Editor Markdown - Escribir y Previsualizar Markdown', description: 'Editor Markdown en línea gratuito. Escribe y previsualiza Markdown en tiempo real con resaltado de sintaxis.', keywords: 'editor markdown, previsualización markdown, editor md, markdown en línea' },
+      jwt: { title: 'Decodificador JWT - Decodificar JSON Web Tokens', description: 'Decodificador JWT en línea gratuito. Decodifica JSON Web Tokens y ve cabecera, payload, firma.', keywords: 'decodificador jwt, jwt token, decodificar jwt, jwt en línea' },
+      uuid: { title: 'Generador UUID - Generar UUID v4', description: 'Generador UUID en línea gratuito. Genera identificadores UUID v4 aleatorios al instante.', keywords: 'generador uuid, uuid v4, generar uuid, generador guid' },
+      cron: { title: 'Analizador Cron - Analizar Expresiones Cron', description: 'Analizador Cron en línea gratuito. Analiza expresiones cron y obtén descripciones legibles.', keywords: 'analizador cron, expresión cron, programación cron, crontab' },
+      qrcode: { title: 'Generador de Código QR - Generar Códigos QR', description: 'Generador de código QR en línea gratuito. Genera códigos QR a partir de texto o URLs al instante.', keywords: 'generador código qr, generar qr, qr en línea, código qr' },
+      privacy: { title: 'Política de Privacidad - JSON Tools', description: 'Aprende cómo JSON Tools maneja tus datos. 100% procesamiento en el navegador, sin recopilación de datos, sin cookies de seguimiento.', keywords: 'política privacidad, protección datos, procesamiento navegador' },
+      about: { title: 'Acerca de JSON Tools - Utilidades de Desarrollador en Línea Gratuitas', description: 'JSON Tools proporciona más de 15 utilidades de desarrollador en línea gratuitas. Privacidad primero, resultados instantáneos, soporte multilingüe.', keywords: 'acerca json tools, herramientas desarrollador gratuitas, utilidades en línea' },
+      terms: { title: 'Términos de Servicio - JSON Tools', description: 'Términos de servicio para JSON Tools. Utilidades de desarrollador en línea gratuitas con procesamiento en el navegador.', keywords: 'términos servicio, términos uso, legal' },
+    },
+    
     pages: {
       privacy: {
         title: 'Política de Privacidad',
@@ -676,6 +754,9 @@ export const translations = {
       minify: '圧縮',
       encode: 'エンコード',
       decode: 'デコード',
+      error: 'エラー',
+      invalidXml: '無効なXML',
+      invalidJwt: '無効なJWT形式',
     },
     
     tools: {
@@ -818,6 +899,28 @@ export const translations = {
       privacy: '🔒 100% ブラウザ側処理 — データはコンピュータから離れません',
     },
     
+    seo: {
+      home: { title: 'JSON フォーマッターとバリデーター - 無料オンライン JSON ツール', description: '無料オンライン JSON フォーマッター、バリデーター、ビューティファイア。JSONデータを即座にフォーマット、圧縮、検証。登録不要、100% ブラウザ側処理。', keywords: 'json フォーマッター, json バリデーター, json ビューティファイア, オンライン json ツール' },
+      json: { title: 'JSON フォーマッター - フォーマット、検証、美化 JSON', description: '無料オンライン JSON フォーマッター。JSONデータをフォーマット、検証、圧縮、美化。即時処理、登録不要。', keywords: 'json フォーマッター, json バリデーター, json ビューティファイア, json 圧縮' },
+      xml: { title: 'XML フォーマッター - XMLドキュメントのフォーマットと美化', description: '無料オンライン XML フォーマッター。XMLドキュメントを即座にフォーマットと美化。ブラウザ側処理。', keywords: 'xml フォーマッター, xml ビューティファイア, xml バリデーター, オンライン xml ツール' },
+      base64: { title: 'Base64 エンコーダー/デコーダー - オンライン Base64 ツール', description: '無料オンライン Base64 エンコーダーとデコーダー。テキストを Base64 にエンコードまたは Base64 をテキストにデコード。', keywords: 'base64 エンコーダー, base64 デコーダー, base64 オンライン, エンコード デコード' },
+      url: { title: 'URL エンコーダー/デコーダー - URL コンポーネントのエンコード', description: '無料オンライン URL エンコーダーとデコーダー。URL コンポーネントとクエリ文字列をエンコードまたはデコード。', keywords: 'url エンコーダー, url デコーダー, url エンコード, url エンコーディング' },
+      hash: { title: 'ハッシュ生成器 - SHA-256 と SHA-1 ハッシュツール', description: '無料オンラインハッシュ生成器。テキストから SHA-256 と SHA-1 ハッシュを即座に生成。', keywords: 'ハッシュ生成器, sha256, sha-1, ハッシュオンライン' },
+      timestamp: { title: 'Unix タイムスタンプ変換 - 日付からタイムスタンプ', description: '無料オンライン Unix タイムスタンプ変換。タイムスタンプを日付に変換、または逆変換。', keywords: 'タイムスタンプ変換, unix タイムスタンプ, epoch 変換' },
+      diff: { title: 'テキスト差分ツール - 二つのテキストを比較', description: '無料オンライン差分ツール。二つのテキストを比較し、違いを横並びでハイライト。', keywords: '差分ツール, テキスト比較, テキスト比較, 差分オンライン' },
+      regex: { title: '正規表現テスター - 正規表現をテスト', description: '無料オンライン正規表現テスター。ライブマッチングとハイライトで正規表現をテスト。', keywords: '正規表現テスター, 正規表現, 正規オンライン, 正規テスト' },
+      color: { title: '色変換 - HEX RGB HSL 変換', description: '無料オンライン色変換器。HEX、RGB、HSL、RGBA 形式間で色を変換。', keywords: '色変換, hex から rgb, rgb から hex, 色ツール' },
+      unit: { title: '単位変換 - 長さ重量温度', description: '無料オンライン単位変換器。長さ、重量、温度、データ、時間の単位を変換。', keywords: '単位変換, 単位変換, 長さ変換, 重量変換' },
+      markdown: { title: 'Markdown エディター - Markdown を書いてプレビュー', description: '無料オンライン Markdown エディター。シンタックスハイライト付きでリアルタイムに Markdown を書いてプレビュー。', keywords: 'markdown エディター, markdown プレビュー, md エディター, オンライン markdown' },
+      jwt: { title: 'JWT 解析 - JSON Web Token を解析', description: '無料オンライン JWT 解析器。JSON Web Token を解析し、ヘッダー、ペイロード、署名を表示。', keywords: 'jwt 解析, jwt token, jwt 解析, jwt オンライン' },
+      uuid: { title: 'UUID 生成器 - UUID v4 を生成', description: '無料オンライン UUID 生成器。ランダムな UUID v4 識別子を即座に生成。', keywords: 'uuid 生成器, uuid v4, uuid 生成, guid 生成器' },
+      cron: { title: 'Cron 解析器 - Cron 式を解析', description: '無料オンライン Cron 解析器。Cron 式を解析し、人間が読める説明を取得。', keywords: 'cron 解析器, cron 式, cron スケジュール, crontab' },
+      qrcode: { title: 'QR コード生成器 - QR コードを生成', description: '無料オンライン QR コード生成器。テキストや URL から QR コードを即座に生成。', keywords: 'qr コード生成器, qr 生成, qr オンライン, qr コード' },
+      privacy: { title: 'プライバシーポリシー - JSON Tools', description: 'JSON Tools がデータをどう処理するか学びましょう。100% ブラウザ側処理、データ収集なし、トラッキング Cookie なし。', keywords: 'プライバシーポリシー, データ保護, ブラウザ側処理' },
+      about: { title: 'JSON Tools について - 無料オンライン開発者ユーティリティ', description: 'JSON Tools は 15 以上の無料オンライン開発者ユーティリティを提供。プライバシー優先、即時結果、多言語サポート。', keywords: 'json tools について, 無料開発者ツール, オンラインユーティリティ' },
+      terms: { title: '利用規約 - JSON Tools', description: 'JSON Tools の利用規約。ブラウザ側処理の無料オンライン開発者ユーティリティ。', keywords: '利用規約, 使用規約, 法的' },
+    },
+    
     pages: {
       privacy: {
         title: 'プライバシーポリシー',
@@ -890,6 +993,9 @@ export const translations = {
       minify: 'Minimieren',
       encode: 'Kodieren',
       decode: 'Dekodieren',
+      error: 'Fehler',
+      invalidXml: 'Ungültiges XML',
+      invalidJwt: 'Ungültiges JWT-Format',
     },
     
     tools: {
@@ -1032,6 +1138,28 @@ export const translations = {
       privacy: '🔒 100% browserseitige Verarbeitung — Ihre Daten verlassen niemals Ihren Computer',
     },
     
+    seo: {
+      home: { title: 'JSON Formatierer und Validator - Kostenloses Online JSON Tool', description: 'Kostenloser Online JSON-Formatierer, Validator und Verschönerer. JSON-Daten sofort formatieren, minimieren und validieren. Keine Anmeldung, 100% browserseitige Verarbeitung.', keywords: 'json formatierer, json validator, json verschönerer, online json tool' },
+      json: { title: 'JSON Formatierer - Formatieren, Validieren und Verschönern JSON', description: 'Kostenloser Online JSON-Formatierer. JSON-Daten formatieren, validieren, minimieren und verschönern. Sofortige Verarbeitung, keine Anmeldung erforderlich.', keywords: 'json formatierer, json validator, json verschönerer, json minimieren' },
+      xml: { title: 'XML Formatierer - Formatieren und Verschönern XML Dokumente', description: 'Kostenloser Online XML-Formatierer. XML-Dokumente sofort formatieren und verschönern. Browserseitige Verarbeitung.', keywords: 'xml formatierer, xml verschönerer, xml validator, online xml tool' },
+      base64: { title: 'Base64 Kodierer/Dekoder - Online Base64 Tool', description: 'Kostenloser Online Base64-Kodierer und Dekoder. Text sofort in Base64 kodieren oder Base64 in Text dekodieren.', keywords: 'base64 kodierer, base64 dekoder, base64 online, kodieren dekodieren' },
+      url: { title: 'URL Kodierer/Dekoder - URL Komponenten kodieren', description: 'Kostenloser Online URL-Kodierer und Dekoder. URL-Komponenten und Abfragestrings kodieren oder dekodieren.', keywords: 'url kodierer, url dekoder, url kodieren, url kodierung' },
+      hash: { title: 'Hash Generator - SHA-256 und SHA-1 Hash Tool', description: 'Kostenloser Online Hash-Generator. SHA-256 und SHA-1 Hashes aus Text sofort generieren.', keywords: 'hash generator, sha256, sha-1, hash online' },
+      timestamp: { title: 'Unix Zeitstempel Konverter - Datum zu Zeitstempel', description: 'Kostenloser Online Unix-Zeitstempel-Konverter. Zeitstempel in Datumsangaben konvertieren und umgekehrt.', keywords: 'zeitstempel konverter, unix zeitstempel, epoch konverter' },
+      diff: { title: 'Text Diff Werkzeug - Zwei Texte vergleichen', description: 'Kostenloses Online Diff-Werkzeug. Zwei Texte vergleichen und Unterschiede nebeneinander hervorheben.', keywords: 'diff werkzeug, text vergleichen, texte vergleichen, diff online' },
+      regex: { title: 'Regex Tester - Reguläre Ausdrücke testen', description: 'Kostenloser Online Regex-Tester. Reguläre Ausdrücke mit Live-Matching und Hervorhebung testen.', keywords: 'regex tester, reguläre ausdrücke, regex online, regex testen' },
+      color: { title: 'Farbkonverter - HEX RGB HSL Konvertierung', description: 'Kostenloser Online Farbkonverter. Farben zwischen HEX, RGB, HSL, RGBA Formaten konvertieren.', keywords: 'farbkonverter, hex zu rgb, rgb zu hex, farb tool' },
+      unit: { title: 'Einheitenkonverter - Länge Gewicht Temperatur', description: 'Kostenloser Online Einheitenkonverter. Längen-, Gewichts-, Temperatur-, Daten- und Zeiteinheiten konvertieren.', keywords: 'einheitenkonverter, einheiten konvertieren, längenkonverter, gewichtskonverter' },
+      markdown: { title: 'Markdown Editor - Markdown schreiben und anzeigen', description: 'Kostenloser Online Markdown-Editor. Markdown mit Syntaxhervorhebung in Echtzeit schreiben und anzeigen.', keywords: 'markdown editor, markdown preview, md editor, online markdown' },
+      jwt: { title: 'JWT Dekoder - JSON Web Tokens dekodieren', description: 'Kostenloser Online JWT-Dekoder. JSON Web Tokens dekodieren und Header, Payload, Signature anzeigen.', keywords: 'jwt dekoder, jwt token, jwt dekodieren, jwt online' },
+      uuid: { title: 'UUID Generator - UUID v4 generieren', description: 'Kostenloser Online UUID-Generator. Zufällige UUID v4 Kennungen sofort generieren.', keywords: 'uuid generator, uuid v4, uuid generieren, guid generator' },
+      cron: { title: 'Cron Parser - Cron Ausdrücke analysieren', description: 'Kostenloser Online Cron-Parser. Cron-Ausdrücke analysieren und lesbare Beschreibungen erhalten.', keywords: 'cron parser, cron ausdruck, cron plan, crontab' },
+      qrcode: { title: 'QR Code Generator - QR Codes generieren', description: 'Kostenloser Online QR-Code-Generator. QR-Codes aus Text oder URLs sofort generieren.', keywords: 'qr code generator, qr generieren, qr online, qr code' },
+      privacy: { title: 'Datenschutzerklärung - JSON Tools', description: 'Erfahren Sie, wie JSON Tools Ihre Daten behandelt. 100% browserseitige Verarbeitung, keine Datenerhebung, keine Tracking-Cookies.', keywords: 'datenschutzerklärung, datenschutz, browserseitige verarbeitung' },
+      about: { title: 'Über JSON Tools - Kostenlose Online Entwickler-Tools', description: 'JSON Tools bietet über 15 kostenlose Online-Entwickler-Tools. Privatsphäre-first, sofortige Ergebnisse, mehrsprachige Unterstützung.', keywords: 'über json tools, kostenlose entwickler tools, online tools' },
+      terms: { title: 'Nutzungsbedingungen - JSON Tools', description: 'Nutzungsbedingungen für JSON Tools. Kostenlose Online-Entwickler-Tools mit browserseitiger Verarbeitung.', keywords: 'nutzungsbedingungen, verwendung, rechtlich' },
+    },
+    
     pages: {
       privacy: {
         title: 'Datenschutzerklärung',
@@ -1104,6 +1232,9 @@ export const translations = {
       minify: 'Minifier',
       encode: 'Encoder',
       decode: 'Décoder',
+      error: 'Erreur',
+      invalidXml: 'XML invalide',
+      invalidJwt: 'Format JWT invalide',
     },
     
     tools: {
@@ -1246,6 +1377,28 @@ export const translations = {
       privacy: '🔒 100% de traitement côté navigateur — vos données ne quittent jamais votre ordinateur',
     },
     
+    seo: {
+      home: { title: 'Formateur et Validateur JSON - Outil JSON en Ligne Gratuit', description: 'Formateur, validateur et embellisseur JSON en ligne gratuit. Formatez, minifiez et validez les données JSON instantanément. Aucune inscription, 100% traitement côté navigateur.', keywords: 'formateur json, validateur json, embellisseur json, outil json en ligne' },
+      json: { title: 'Formateur JSON - Formater, Valider et Embellir JSON', description: 'Formateur JSON en ligne gratuit. Formatez, validez, minifiez et embellissez les données JSON. Traitement instantané, aucune inscription requise.', keywords: 'formateur json, validateur json, embellisseur json, json minifier' },
+      xml: { title: 'Formateur XML - Formater et Embellir Documents XML', description: 'Formateur XML en ligne gratuit. Formatez et embellissez les documents XML instantanément. Traitement côté navigateur.', keywords: 'formateur xml, embellisseur xml, validateur xml, outil xml en ligne' },
+      base64: { title: 'Encodeur/Décodeur Base64 - Outil Base64 en Ligne', description: 'Encodeur et décodeur Base64 en ligne gratuit. Encodez du texte en Base64 ou décodez Base64 en texte instantanément.', keywords: 'encodeur base64, décodeur base64, base64 en ligne, encoder décoder' },
+      url: { title: 'Encodeur/Décodeur URL - Encoder Composants URL', description: 'Encodeur et décodeur URL en ligne gratuit. Encodez ou décodez les composants URL et les chaînes de requête.', keywords: 'encodeur url, décodeur url, encoder url, encodage url' },
+      hash: { title: 'Générateur de Hash - Outil Hash SHA-256 et SHA-1', description: 'Générateur de hash en ligne gratuit. Générez des hash SHA-256 et SHA-1 à partir de texte instantanément.', keywords: 'générateur hash, sha256, sha-1, hash en ligne' },
+      timestamp: { title: 'Convertisseur Timestamp Unix - Date vers Timestamp', description: 'Convertisseur timestamp Unix en ligne gratuit. Convertissez des timestamps en dates et vice versa.', keywords: 'convertisseur timestamp, unix timestamp, convertisseur epoch' },
+      diff: { title: 'Outil Diff Textuel - Comparer Deux Textes', description: 'Outil diff en ligne gratuit. Comparez deux textes et mettez en évidence les différences côte à côte.', keywords: 'outil diff, comparer texte, comparer textes, diff en ligne' },
+      regex: { title: 'Testeur Regex - Tester Expressions Régulières', description: 'Testeur regex en ligne gratuit. Testez les expressions régulières avec correspondance en direct et mise en évidence.', keywords: 'testeur regex, expression régulière, regex en ligne, tester regex' },
+      color: { title: 'Convertisseur Couleur - Conversion HEX RGB HSL', description: 'Convertisseur couleur en ligne gratuit. Convertissez les couleurs entre formats HEX, RGB, HSL, RGBA.', keywords: 'convertisseur couleur, hex vers rgb, rgb vers hex, outil couleur' },
+      unit: { title: 'Convertisseur Unités - Longueur Poids Température', description: 'Convertisseur unités en ligne gratuit. Convertissez unités de longueur, poids, température, données, temps.', keywords: 'convertisseur unités, convertir unités, convertisseur longueur, convertisseur poids' },
+      markdown: { title: 'Éditeur Markdown - Écrire et Prévisualiser Markdown', description: 'Éditeur Markdown en ligne gratuit. Écrivez et prévisualisez Markdown en temps réel avec coloration syntaxique.', keywords: 'éditeur markdown, prévisualisation markdown, éditeur md, markdown en ligne' },
+      jwt: { title: 'Décodeur JWT - Décoder JSON Web Tokens', description: 'Décodeur JWT en ligne gratuit. Décodez JSON Web Tokens et affichez en-tête, payload, signature.', keywords: 'décodeur jwt, jwt token, décoder jwt, jwt en ligne' },
+      uuid: { title: 'Générateur UUID - Générer UUID v4', description: 'Générateur UUID en ligne gratuit. Générez des identifiants UUID v4 aléatoires instantanément.', keywords: 'générateur uuid, uuid v4, générer uuid, générateur guid' },
+      cron: { title: 'Analyseur Cron - Analyser Expressions Cron', description: 'Analyseur Cron en ligne gratuit. Analysez les expressions cron et obtenez des descriptions lisibles.', keywords: 'analyseur cron, expression cron, planification cron, crontab' },
+      qrcode: { title: 'Générateur Code QR - Générer Codes QR', description: 'Générateur code QR en ligne gratuit. Générez des codes QR à partir de texte ou URLs instantanément.', keywords: 'générateur code qr, générer qr, qr en ligne, code qr' },
+      privacy: { title: 'Politique de Confidentialité - JSON Tools', description: 'Découvrez comment JSON Tools traite vos données. 100% traitement côté navigateur, aucune collecte de données, aucun cookie de suivi.', keywords: 'politique confidentialité, protection données, traitement navigateur' },
+      about: { title: 'À Propos de JSON Tools - Utilitaires Développeur en Ligne Gratuits', description: 'JSON Tools fournit plus de 15 utilitaires développeur en ligne gratuits. Confidentialité d\'abord, résultats instantanés, support multilingue.', keywords: 'à propos json tools, outils développeur gratuits, utilitaires en ligne' },
+      terms: { title: 'Conditions d\'Utilisation - JSON Tools', description: 'Conditions d\'utilisation pour JSON Tools. Utilitaires développeur en ligne gratuits avec traitement côté navigateur.', keywords: 'conditions utilisation, termes utilisation, légal' },
+    },
+    
     pages: {
       privacy: {
         title: 'Politique de Confidentialité',
@@ -1318,6 +1471,9 @@ export const translations = {
       minify: 'Минифицировать',
       encode: 'Кодировать',
       decode: 'Декодировать',
+      error: 'Ошибка',
+      invalidXml: 'Неверный XML',
+      invalidJwt: 'Неверный формат JWT',
     },
     
     tools: {
@@ -1460,6 +1616,28 @@ export const translations = {
       privacy: '🔒 100% обработка в браузере — ваши данные никогда не покидают ваш компьютер',
     },
     
+    seo: {
+      home: { title: 'JSON Форматтер и Валидатор - Бесплатный Онлайн JSON Инструмент', description: 'Бесплатный онлайн JSON форматтер, валидатор и beautifier. Мгновенно форматируйте, минифицируйте и проверяйте JSON данные. Без регистрации, 100% обработка в браузере.', keywords: 'json форматтер, json валидатор, json beautifier, онлайн json инструмент' },
+      json: { title: 'JSON Форматтер - Форматировать, Проверять и Beautify JSON', description: 'Бесплатный онлайн JSON форматтер. Форматируйте, проверяйте, минифицируйте и beautify JSON данные. Мгновенная обработка, без регистрации.', keywords: 'json форматтер, json валидатор, json beautifier, json минифицировать' },
+      xml: { title: 'XML Форматтер - Форматировать и Beautify XML Документы', description: 'Бесплатный онлайн XML форматтер. Мгновенно форматируйте и beautify XML документы. Обработка в браузере.', keywords: 'xml форматтер, xml beautifier, xml валидатор, онлайн xml инструмент' },
+      base64: { title: 'Base64 Кодировщик/Декодер - Онлайн Base64 Инструмент', description: 'Бесплатный онлайн Base64 кодировщик и декодер. Мгновенно кодируйте текст в Base64 или декодируйте Base64 в текст.', keywords: 'base64 кодировщик, base64 декодер, base64 онлайн, кодировать декодировать' },
+      url: { title: 'URL Кодировщик/Декодер - Кодировать URL Компоненты', description: 'Бесплатный онлайн URL кодировщик и декодер. Кодируйте или декодируйте URL компоненты и строки запроса.', keywords: 'url кодировщик, url декодер, кодировать url, url кодирование' },
+      hash: { title: 'Генератор Хешей - SHA-256 и SHA-1 Хеш Инструмент', description: 'Бесплатный онлайн генератор хешей. Мгновенно генерируйте SHA-256 и SHA-1 хеш из текста.', keywords: 'генератор хеш, sha256, sha-1, хеш онлайн' },
+      timestamp: { title: 'Конвертер Unix Временных Меток - Дата в Временную Метку', description: 'Бесплатный онлайн конвертер Unix временных меток. Конвертируйте временные метки в даты и обратно.', keywords: 'конвертер временных меток, unix временная метка, epoch конвертер' },
+      diff: { title: 'Инструмент Сравнения Текста - Сравнить Два Текста', description: 'Бесплатный онлайн diff инструмент. Сравнивайте два текста и выделяйте различия рядом.', keywords: 'diff инструмент, сравнить текст, сравнить тексты, diff онлайн' },
+      regex: { title: 'Тестер Regex - Тестировать Регулярные Выражения', description: 'Бесплатный онлайн тестер regex. Тестируйте регулярные выражения с живым сопоставлением и выделением.', keywords: 'regex тестер, регулярное выражение, regex онлайн, тестировать regex' },
+      color: { title: 'Конвертер Цветов - HEX RGB HSL Конвертация', description: 'Бесплатный онлайн конвертер цветов. Конвертируйте цвета между HEX, RGB, HSL, RGBA форматами.', keywords: 'конвертер цветов, hex в rgb, rgb в hex, цвет инструмент' },
+      unit: { title: 'Конвертер Единиц - Длина Вес Температура', description: 'Бесплатный онлайн конвертер единиц. Конвертируйте единицы длины, веса, температуры, данных, времени.', keywords: 'конвертер единиц, конвертировать единицы, конвертер длины, конвертер веса' },
+      markdown: { title: 'Markdown Редактор - Писать и Просматривать Markdown', description: 'Бесплатный онлайн Markdown редактор. Пишите и просматривайте Markdown в реальном времени с подсветкой синтаксиса.', keywords: 'markdown редактор, markdown просмотр, md редактор, онлайн markdown' },
+      jwt: { title: 'JWT Декодер - Декодировать JSON Web Tokens', description: 'Бесплатный онлайн JWT декодер. Декодируйте JSON Web Tokens и просматривайте заголовок, payload, подпись.', keywords: 'jwt декодер, jwt token, декодировать jwt, jwt онлайн' },
+      uuid: { title: 'UUID Генератор - Генерировать UUID v4', description: 'Бесплатный онлайн UUID генератор. Мгновенно генерируйте случайные UUID v4 идентификаторы.', keywords: 'uuid генератор, uuid v4, генерировать uuid, guid генератор' },
+      cron: { title: 'Cron Парсер - Анализировать Cron Выражения', description: 'Бесплатный онлайн Cron парсер. Анализируйте cron выражения и получайте понятные описания.', keywords: 'cron парсер, cron выражение, cron план, crontab' },
+      qrcode: { title: 'QR Код Генератор - Генерировать QR Коды', description: 'Бесплатный онлайн QR код генератор. Мгновенно генерируйте QR коды из текста или URL.', keywords: 'qr код генератор, генерировать qr, qr онлайн, qr код' },
+      privacy: { title: 'Политика Конфиденциальности - JSON Tools', description: 'Узнайте как JSON Tools обрабатывает ваши данные. 100% обработка в браузере, без сбора данных, без cookies трекинга.', keywords: 'политика конфиденциальности, защита данных, обработка в браузере' },
+      about: { title: 'О JSON Tools - Бесплатные Онлайн Инструменты Разработчика', description: 'JSON Tools предоставляет более 15 бесплатных онлайн инструментов разработчика. Приватность сначала, мгновенные результаты, многоязычная поддержка.', keywords: 'о json tools, бесплатные инструменты разработчика, онлайн утилиты' },
+      terms: { title: 'Условия Использования - JSON Tools', description: 'Условия использования для JSON Tools. Бесплатные онлайн инструменты разработчика с обработкой в браузере.', keywords: 'условия использования, условия, юридическое' },
+    },
+    
     pages: {
       privacy: {
         title: 'Политика Конфиденциальности',
@@ -1532,6 +1710,9 @@ export const translations = {
       minify: 'Minificar',
       encode: 'Codificar',
       decode: 'Decodificar',
+      error: 'Erro',
+      invalidXml: 'XML inválido',
+      invalidJwt: 'Formato JWT inválido',
     },
     
     tools: {
@@ -1674,6 +1855,28 @@ export const translations = {
       privacy: '🔒 100% processamento no navegador — seus dados nunca saem do seu computador',
     },
     
+    seo: {
+      home: { title: 'Formatador e Validador JSON - Ferramenta JSON Online Gratuita', description: 'Formatador, validador e embelezador JSON online gratuito. Formate, minifique e valide dados JSON instantaneamente. Sem cadastro, 100% processamento no navegador.', keywords: 'formatador json, validador json, embelezador json, ferramenta json online' },
+      json: { title: 'Formatador JSON - Formatar, Validar e Embelezar JSON', description: 'Formatador JSON online gratuito. Formate, valide, minifique e embeleze dados JSON. Processamento instantâneo, sem cadastro necessário.', keywords: 'formatador json, validador json, embelezador json, json minificar' },
+      xml: { title: 'Formatador XML - Formatar e Embelezar Documentos XML', description: 'Formatador XML online gratuito. Formate e embeleze documentos XML instantaneamente. Processamento no navegador.', keywords: 'formatador xml, embelezador xml, validador xml, ferramenta xml online' },
+      base64: { title: 'Codificador/Decodificador Base64 - Ferramenta Base64 Online', description: 'Codificador e decodificador Base64 online gratuito. Codifique texto em Base64 ou decodifique Base64 em texto instantaneamente.', keywords: 'codificador base64, decodificador base64, base64 online, codificar decodificar' },
+      url: { title: 'Codificador/Decodificador URL - Codificar Componentes URL', description: 'Codificador e decodificador URL online gratuito. Codifique ou decodifique componentes URL e strings de consulta.', keywords: 'codificador url, decodificador url, codificar url, codificação url' },
+      hash: { title: 'Gerador de Hash - Ferramenta Hash SHA-256 e SHA-1', description: 'Gerador de hash online gratuito. Gere hashes SHA-256 e SHA-1 a partir de texto instantaneamente.', keywords: 'gerador hash, sha256, sha-1, hash online' },
+      timestamp: { title: 'Conversor de Timestamp Unix - Data para Timestamp', description: 'Conversor de timestamp Unix online gratuito. Converta timestamps para datas e vice-versa.', keywords: 'conversor timestamp, unix timestamp, conversor epoch' },
+      diff: { title: 'Ferramenta Diff de Texto - Comparar Dois Textos', description: 'Ferramenta diff online gratuita. Compare dois textos e destaque diferenças lado a lado.', keywords: 'ferramenta diff, comparar texto, comparar textos, diff online' },
+      regex: { title: 'Testador Regex - Testar Expressões Regulares', description: 'Testador regex online gratuito. Teste expressões regulares com correspondência em tempo real e destaque.', keywords: 'testador regex, expressão regular, regex online, testar regex' },
+      color: { title: 'Conversor de Cores - Conversão HEX RGB HSL', description: 'Conversor de cores online gratuito. Converta cores entre formatos HEX, RGB, HSL, RGBA.', keywords: 'conversor cores, hex para rgb, rgb para hex, ferramenta cor' },
+      unit: { title: 'Conversor de Unidades - Comprimento Peso Temperatura', description: 'Conversor de unidades online gratuito. Converta unidades de comprimento, peso, temperatura, dados, tempo.', keywords: 'conversor unidades, converter unidades, conversor comprimento, conversor peso' },
+      markdown: { title: 'Editor Markdown - Escrever e Visualizar Markdown', description: 'Editor Markdown online gratuito. Escreva e visualize Markdown em tempo real com destaque de sintaxe.', keywords: 'editor markdown, visualização markdown, editor md, markdown online' },
+      jwt: { title: 'Decodificador JWT - Decodificar JSON Web Tokens', description: 'Decodificador JWT online gratuito. Decodifique JSON Web Tokens e visualize cabeçalho, payload, assinatura.', keywords: 'decodificador jwt, jwt token, decodificar jwt, jwt online' },
+      uuid: { title: 'Gerador UUID - Gerar UUID v4', description: 'Gerador UUID online gratuito. Gere identificadores UUID v4 aleatórios instantaneamente.', keywords: 'gerador uuid, uuid v4, gerar uuid, gerador guid' },
+      cron: { title: 'Analisador Cron - Analisar Expressões Cron', description: 'Analisador Cron online gratuito. Analise expressões cron e obtenha descrições legíveis.', keywords: 'analisador cron, expressão cron, cron agendamento, crontab' },
+      qrcode: { title: 'Gerador de QR Code - Gerar QR Codes', description: 'Gerador de QR code online gratuito. Gere QR codes a partir de texto ou URLs instantaneamente.', keywords: 'gerador qr code, gerar qr, qr online, qr code' },
+      privacy: { title: 'Política de Privacidade - JSON Tools', description: 'Saiba como JSON Tools trata seus dados. 100% processamento no navegador, sem coleta de dados, sem cookies de rastreamento.', keywords: 'política privacidade, proteção dados, processamento navegador' },
+      about: { title: 'Sobre JSON Tools - Utilidades de Desenvolvedor Online Gratuitas', description: 'JSON Tools fornece mais de 15 utilidades de desenvolvedor online gratuitas. Privacidade primeiro, resultados instantâneos, suporte multilíngue.', keywords: 'sobre json tools, ferramentas desenvolvedor gratuitas, utilidades online' },
+      terms: { title: 'Termos de Serviço - JSON Tools', description: 'Termos de serviço para JSON Tools. Utilidades de desenvolvedor online gratuitas com processamento no navegador.', keywords: 'termos serviço, termos uso, legal' },
+    },
+    
     pages: {
       privacy: {
         title: 'Política de Privacidade',
@@ -1746,6 +1949,9 @@ export const translations = {
       minify: 'Minify',
       encode: 'Enkode',
       decode: 'Dekode',
+      error: 'Kesalahan',
+      invalidXml: 'XML tidak valid',
+      invalidJwt: 'Format JWT tidak valid',
     },
     
     tools: {
@@ -1888,6 +2094,28 @@ export const translations = {
       privacy: '🔒 100% pemrosesan di browser — data Anda tidak pernah meninggalkan komputer Anda',
     },
     
+    seo: {
+      home: { title: 'Pemformat dan Validator JSON - Alat JSON Online Gratis', description: 'Pemformat, validator, dan beautifier JSON online gratis. Format, minify, dan validasi data JSON secara instan. Tanpa pendaftaran, 100% pemrosesan di browser.', keywords: 'pemformat json, validator json, beautifier json, alat json online' },
+      json: { title: 'Pemformat JSON - Format, Validasi, dan Beautify JSON', description: 'Pemformat JSON online gratis. Format, validasi, minify, dan beautify data JSON. Pemrosesan instan, tanpa pendaftaran.', keywords: 'pemformat json, validator json, beautifier json, json minify' },
+      xml: { title: 'Pemformat XML - Format dan Beautify Dokumen XML', description: 'Pemformat XML online gratis. Format dan beautify dokumen XML secara instan. Pemrosesan di browser.', keywords: 'pemformat xml, beautifier xml, validator xml, alat xml online' },
+      base64: { title: 'Enkoder/Dekoder Base64 - Alat Base64 Online', description: 'Enkoder dan dekoder Base64 online gratis. Enkode teks ke Base64 atau dekode Base64 ke teks secara instan.', keywords: 'enkoder base64, dekoder base64, base64 online, enkode dekode' },
+      url: { title: 'Enkoder/Dekoder URL - Enkode Komponen URL', description: 'Enkoder dan dekoder URL online gratis. Enkode atau dekode komponen URL dan string kueri.', keywords: 'enkoder url, dekoder url, enkode url, encoding url' },
+      hash: { title: 'Generator Hash - Alat Hash SHA-256 dan SHA-1', description: 'Generator hash online gratis. Hasilkan hash SHA-256 dan SHA-1 dari teks secara instan.', keywords: 'generator hash, sha256, sha-1, hash online' },
+      timestamp: { title: 'Konverter Timestamp Unix - Tanggal ke Timestamp', description: 'Konverter timestamp Unix online gratis. Konversi timestamp ke tanggal dan sebaliknya.', keywords: 'konverter timestamp, unix timestamp, konverter epoch' },
+      diff: { title: 'Alat Diff Teks - Bandingkan Dua Teks', description: 'Alat diff online gratis. Bandingkan dua teks dan sorot perbedaan secara berdampingan.', keywords: 'alat diff, bandingkan teks, bandingkan teks, diff online' },
+      regex: { title: 'Tester Regex - Tes Ekspresi Reguler', description: 'Tester regex online gratis. Tes ekspresi reguler dengan pencocokan langsung dan penyorotan.', keywords: 'tester regex, ekspresi reguler, regex online, tes regex' },
+      color: { title: 'Konverter Warna - Konversi HEX RGB HSL', description: 'Konverter warna online gratis. Konversi warna antara format HEX, RGB, HSL, RGBA.', keywords: 'konverter warna, hex ke rgb, rgb ke hex, alat warna' },
+      unit: { title: 'Konverter Satuan - Panjang Berat Suhu', description: 'Konverter satuan online gratis. Konversi satuan panjang, berat, suhu, data, waktu.', keywords: 'konverter satuan, konversi satuan, konverter panjang, konverter berat' },
+      markdown: { title: 'Editor Markdown - Tulis dan Pratinjau Markdown', description: 'Editor Markdown online gratis. Tulis dan pratinjau Markdown secara real-time dengan penyorotan sintaks.', keywords: 'editor markdown, pratinjau markdown, editor md, markdown online' },
+      jwt: { title: 'Dekoder JWT - Dekode JSON Web Tokens', description: 'Dekoder JWT online gratis. Dekode JSON Web Tokens dan lihat header, payload, signature.', keywords: 'dekoder jwt, jwt token, dekode jwt, jwt online' },
+      uuid: { title: 'Generator UUID - Hasilkan UUID v4', description: 'Generator UUID online gratis. Hasilkan pengenal UUID v4 acak secara instan.', keywords: 'generator uuid, uuid v4, hasilkan uuid, generator guid' },
+      cron: { title: 'Parser Cron - Parse Ekspresi Cron', description: 'Parser Cron online gratis. Parse ekspresi cron dan dapatkan deskripsi yang dapat dibaca.', keywords: 'parser cron, ekspresi cron, jadwal cron, crontab' },
+      qrcode: { title: 'Generator QR Code - Hasilkan QR Codes', description: 'Generator QR code online gratis. Hasilkan QR codes dari teks atau URL secara instan.', keywords: 'generator qr code, hasilkan qr, qr online, qr code' },
+      privacy: { title: 'Kebijakan Privasi - JSON Tools', description: 'Pelajari bagaimana JSON Tools menangani data Anda. 100% pemrosesan di browser, tanpa pengumpulan data, tanpa cookie pelacakan.', keywords: 'kebijakan privasi, perlindungan data, pemrosesan browser' },
+      about: { title: 'Tentang JSON Tools - Utilitas Pengembang Online Gratis', description: 'JSON Tools menyediakan lebih dari 15 utilitas pengembang online gratis. Privasi pertama, hasil instan, dukungan multi-bahasa.', keywords: 'tentang json tools, alat pengembang gratis, utilitas online' },
+      terms: { title: 'Ketentuan Layanan - JSON Tools', description: 'Ketentuan layanan untuk JSON Tools. Utilitas pengembang online gratis dengan pemrosesan di browser.', keywords: 'ketentuan layanan, ketentuan penggunaan, legal' },
+    },
+    
     pages: {
       privacy: {
         title: 'Kebijakan Privasi',
@@ -1960,6 +2188,9 @@ export const translations = {
       minify: 'تصغير',
       encode: 'ترميز',
       decode: 'فك الترميز',
+      error: 'خطأ',
+      invalidXml: 'XML غير صالح',
+      invalidJwt: 'صيغة JWT غير صالحة',
     },
     
     tools: {
@@ -2100,6 +2331,28 @@ export const translations = {
     
     footer: {
       privacy: '🔒 100% معالجة في المتصفح — بياناتك لا تغادر جهازك أبدًا',
+    },
+    
+    seo: {
+      home: { title: 'منسق ومتحقق JSON - أداة JSON مجانية عبر الإنترنت', description: 'منسق ومتحقق ومجمل JSON مجاني عبر الإنترنت. نسق، صغر، وتحقق من بيانات JSON فورًا. بدون تسجيل، 100% معالجة في المتصفح.', keywords: 'منسق json, متحقق json, مجمل json, أداة json عبر الإنترنت' },
+      json: { title: 'منسق JSON - نسق، تحقق، وجمّل JSON', description: 'منسق JSON مجاني عبر الإنترنت. نسق، تحقق، صغر، وجمّل بيانات JSON. معالجة فورية، بدون تسجيل.', keywords: 'منسق json, متحقق json, مجمل json, تصغير json' },
+      xml: { title: 'منسق XML - نسق وجمّل مستندات XML', description: 'منسق XML مجاني عبر الإنترنت. نسق وجمّل مستندات XML فورًا. معالجة في المتصفح.', keywords: 'منسق xml, مجمل xml, متحقق xml, أداة xml عبر الإنترنت' },
+      base64: { title: 'مشفّر/مفكك Base64 - أداة Base64 عبر الإنترنت', description: 'مشفّر ومفكك Base64 مجاني عبر الإنترنت. شفّر نص إلى Base64 أو فك ترميز Base64 إلى نص فورًا.', keywords: 'مشفّر base64, مفكك base64, base64 عبر الإنترنت, تشفير فك تشفير' },
+      url: { title: 'مشفّر/مفكك URL - تشفير مكونات URL', description: 'مشفّر ومفكك URL مجاني عبر الإنترنت. شفّر أو فك ترميز مكونات URL وسلاسل الاستعلام.', keywords: 'مشفّر url, مفكك url, تشفير url, ترميز url' },
+      hash: { title: 'مولد Hash - أداة Hash SHA-256 و SHA-1', description: 'مولد Hash مجاني عبر الإنترنت. أنشئ Hash SHA-256 و SHA-1 من نص فورًا.', keywords: 'مولد hash, sha256, sha-1, hash عبر الإنترنت' },
+      timestamp: { title: 'محول الطابع الزمني Unix - تاريخ إلى طابع زمني', description: 'محول الطابع الزمني Unix مجاني عبر الإنترنت.حوّل الطوابع الزمنية إلى تواريخ والعكس.', keywords: 'محول طابع زمني, unix طابع زمني, محول epoch' },
+      diff: { title: 'أداة مقارنة النصوص - قارن نصين', description: 'أداة مقارنة مجانية عبر الإنترنت. قارن نصين وأبرز الاختلافات جنبًا إلى جنب.', keywords: 'أداة مقارنة, قارن نص, قارن نصوص, مقارنة عبر الإنترنت' },
+      regex: { title: 'مختبر Regex - اختبار التعبيرات النمطية', description: 'مختبر Regex مجاني عبر الإنترنت. اختبر التعبيرات النمطية مع مطابقة فورية وتسليط الضوء.', keywords: 'مختبر regex, تعبير نمطي, regex عبر الإنترنت, اختبار regex' },
+      color: { title: 'محول الألوان - تحويل HEX RGB HSL', description: 'محول الألوان مجاني عبر الإنترنت.حوّل الألوان بين صيغ HEX، RGB، HSL، RGBA.', keywords: 'محول ألوان, hex إلى rgb, rgb إلى hex, أداة ألوان' },
+      unit: { title: 'محول الوحدات - طول وزن حرارة', description: 'محول الوحدات مجاني عبر الإنترنت.حوّل وحدات الطول، الوزن، الحرارة، البيانات، الوقت.', keywords: 'محول وحدات, تحويل وحدات, محول طول, محول وزن' },
+      markdown: { title: 'محرر Markdown - كتابة ومعاينة Markdown', description: 'محرر Markdown مجاني عبر الإنترنت. اكتب وعاين Markdown في الوقت الفعلي مع تسليط الضوء على النص.', keywords: 'محرر markdown, معاينة markdown, محرر md, markdown عبر الإنترنت' },
+      jwt: { title: 'مفكك JWT - فك ترميز JSON Web Tokens', description: 'مفكك JWT مجاني عبر الإنترنت. فك ترميز JSON Web Tokens وعرض الترويسة، الحمولة، التوقيع.', keywords: 'مفكك jwt, jwt token, فك jwt, jwt عبر الإنترنت' },
+      uuid: { title: 'مولد UUID - إنشاء UUID v4', description: 'مولد UUID مجاني عبر الإنترنت. أنشئ معرفات UUID v4 عشوائية فورًا.', keywords: 'مولد uuid, uuid v4, إنشاء uuid, مولد guid' },
+      cron: { title: 'محلل Cron - تحليل تعبيرات Cron', description: 'محلل Cron مجاني عبر الإنترنت. حلّل تعبيرات Cron واحصل على أوصاف قابلة للقراءة.', keywords: 'محلل cron, تعبير cron, جدول cron, crontab' },
+      qrcode: { title: 'مولد رمز QR - إنشاء رموز QR', description: 'مولد رمز QR مجاني عبر الإنترنت. أنشئ رموز QR من نص أو عناوين URL فورًا.', keywords: 'مولد qr code, إنشاء qr, qr عبر الإنترنت, qr code' },
+      privacy: { title: 'سياسة الخصوصية - JSON Tools', description: 'تعرف على كيفية معالجة JSON Tools لبياناتك. 100% معالجة في المتصفح، بدون جمع بيانات، بدون ملفات تعريف تتبع.', keywords: 'سياسة خصوصية, حماية بيانات, معالجة متصفح' },
+      about: { title: 'حول JSON Tools - أدوات مطور مجانية عبر الإنترنت', description: 'JSON Tools يوفر أكثر من 15 أداة مطور مجانية عبر الإنترنت. الخصوصية أولًا، نتائج فورية، دعم متعدد اللغات.', keywords: 'حول json tools, أدوات مطور مجانية, أدوات عبر الإنترنت' },
+      terms: { title: 'شروط الخدمة - JSON Tools', description: 'شروط خدمة JSON Tools. أدوات مطور مجانية عبر الإنترنت مع معالجة في المتصفح.', keywords: 'شروط خدمة, شروط استخدام, قانوني' },
     },
     
     pages: {
