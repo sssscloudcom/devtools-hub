@@ -48,7 +48,11 @@ export function qrCodeGenerator(this: any) {
   `
 }
 
-export function bindQrCodeGeneratorEvents(router: any) {
+export function bindQrCodeGeneratorEvents() {
+  const lang = getLang()
+  const i18n = t(lang)
+  const tool = i18n.tools.qrcode
+  
   const qrInput = document.getElementById('qr-input') as HTMLTextAreaElement
   const qrSize = document.getElementById('qr-size') as HTMLSelectElement
   const qrColor = document.getElementById('qr-color') as HTMLInputElement

@@ -1,7 +1,7 @@
 // Regex Tester Tool - Native JS Implementation
 import { getLang, t } from '../i18n'
 
-export function regexTester(router: any) {
+export function regexTester() {
   const lang = getLang()
   const i18n = t(lang)
   const tool = i18n.tools.regex
@@ -75,7 +75,7 @@ export function regexTester(router: any) {
   `
 }
 
-export function bindRegexTesterEvents(router: any) {
+export function bindRegexTesterEvents() {
   const lang = getLang()
   const i18n = t(lang)
   const tool = i18n.tools.regex

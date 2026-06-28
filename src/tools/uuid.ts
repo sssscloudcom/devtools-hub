@@ -31,7 +31,7 @@ export function uuidGenerator(this: any) {
   `
 }
 
-export function bindUuidGeneratorEvents(router: any) {
+export function bindUuidGeneratorEvents() {
   const countInput = document.getElementById('uuid-count') as HTMLInputElement
   const output = document.getElementById('uuid-output') as HTMLTextAreaElement
   const generateBtn = document.getElementById('uuid-generate')

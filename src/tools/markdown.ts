@@ -1,7 +1,7 @@
 // Markdown Editor Tool - Native JS Implementation
 import { getLang, t } from '../i18n'
 
-export function markdownEditor(router: any) {
+export function markdownEditor() {
   const lang = getLang()
   const i18n = t(lang)
   const tool = i18n.tools.markdown
@@ -58,7 +58,7 @@ console.log('Hello, Markdown!')
   `
 }
 
-export function bindMarkdownEditorEvents(router: any) {
+export function bindMarkdownEditorEvents() {
   const input = document.getElementById('md-input') as HTMLTextAreaElement
   const preview = document.getElementById('md-preview') as HTMLDivElement
   

@@ -38,7 +38,11 @@ export function cronParser(this: any) {
   `
 }
 
-export function bindCronParserEvents(router: any) {
+export function bindCronParserEvents() {
+  const lang = getLang()
+  const i18n = t(lang)
+  const tool = i18n.tools.cron
+  
   const cronInput = document.getElementById('cron-input') as HTMLInputElement
   const cronHuman = document.getElementById('cron-human') as HTMLParagraphElement
   const cronFields = document.getElementById('cron-fields') as HTMLDivElement

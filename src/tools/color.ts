@@ -1,7 +1,7 @@
 // Color Converter Tool - Native JS Implementation
 import { getLang, t } from '../i18n'
 
-export function colorConverter(router: any) {
+export function colorConverter() {
   const lang = getLang()
   const i18n = t(lang)
   const tool = i18n.tools.color
@@ -76,7 +76,7 @@ export function colorConverter(router: any) {
   `
 }
 
-export function bindColorConverterEvents(router: any) {
+export function bindColorConverterEvents() {
   const picker = document.getElementById('color-picker') as HTMLInputElement
   const preview = document.getElementById('color-preview') as HTMLDivElement
   const hexInput = document.getElementById('color-hex') as HTMLInputElement

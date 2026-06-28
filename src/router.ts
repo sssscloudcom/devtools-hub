@@ -69,6 +69,8 @@ export class Router {
     }
   }
 
+  // Reserved for future use
+  // @ts-ignore - method reserved for future event binding optimization
   private bindOnce(id: string, event: string, handler: () => void) {
     const key = `${id}:${event}`
     if (!this.boundEvents.has(key)) {
@@ -211,7 +213,7 @@ export class Router {
     }
     if (document.getElementById('current-ts')) {
       updateTs()
-      this.timestampInterval = setInterval(updateTs, 1000)
+      this.timestampInterval = window.setInterval(updateTs, 1000)
     }
 
     const tsInput = document.getElementById('ts-input') as HTMLInputElement
@@ -229,7 +231,9 @@ export class Router {
     // XML Formatter
     const xmlInput = document.getElementById('xml-input') as HTMLTextAreaElement
     const xmlOutput = document.getElementById('xml-output') as HTMLTextAreaElement
-    const xmlError = document.getElementById('xml-error') as HTMLDivElement
+    // xmlError element reserved for future error display
+    // @ts-ignore - element reserved for DOM
+    const _xmlError = document.getElementById('xml-error') as HTMLDivElement
 
     document.getElementById('xml-format-btn')?.addEventListener('click', () => {
       if (!xmlInput.value.trim()) return
@@ -341,14 +345,14 @@ export class Router {
     })
     
     // New tools
-    if (window.location.pathname === '/regex') bindRegexTesterEvents(this)
-    if (window.location.pathname === '/color') bindColorConverterEvents(this)
-    if (window.location.pathname === '/unit') bindUnitConverterEvents(this)
-    if (window.location.pathname === '/markdown') bindMarkdownEditorEvents(this)
-    if (window.location.pathname === '/jwt') bindJwtDecoderEvents(this)
-    if (window.location.pathname === '/uuid') bindUuidGeneratorEvents(this)
-    if (window.location.pathname === '/cron') bindCronParserEvents(this)
-    if (window.location.pathname === '/qrcode') bindQrCodeGeneratorEvents(this)
+    if (window.location.pathname === '/regex') bindRegexTesterEvents()
+    if (window.location.pathname === '/color') bindColorConverterEvents()
+    if (window.location.pathname === '/unit') bindUnitConverterEvents()
+    if (window.location.pathname === '/markdown') bindMarkdownEditorEvents()
+    if (window.location.pathname === '/jwt') bindJwtDecoderEvents()
+    if (window.location.pathname === '/uuid') bindUuidGeneratorEvents()
+    if (window.location.pathname === '/cron') bindCronParserEvents()
+    if (window.location.pathname === '/qrcode') bindQrCodeGeneratorEvents()
   }
 
   home() {
@@ -649,35 +653,35 @@ export class Router {
   }
 
   regexTester() {
-    return regexTester(this)
+    return regexTester()
   }
 
   colorConverter() {
-    return colorConverter(this)
+    return colorConverter()
   }
 
   unitConverter() {
-    return unitConverter(this)
+    return unitConverter()
   }
 
   markdownEditor() {
-    return markdownEditor(this)
+    return markdownEditor()
   }
 
   jwtDecoder() {
-    return jwtDecoder(this)
+    return jwtDecoder()
   }
 
   uuidGenerator() {
-    return uuidGenerator(this)
+    return uuidGenerator()
   }
 
   cronParser() {
-    return cronParser(this)
+    return cronParser()
   }
 
   qrCodeGenerator() {
-    return qrCodeGenerator(this)
+    return qrCodeGenerator()
   }
 
   privacy() {

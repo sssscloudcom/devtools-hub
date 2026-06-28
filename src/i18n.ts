@@ -84,6 +84,10 @@ export const translations = {
         current: 'Current timestamp',
         toDate: 'To Date',
         toTimestamp: 'To Timestamp',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -373,6 +377,10 @@ export const translations = {
         current: '当前时间戳',
         toDate: '转日期',
         toTimestamp: '转时间戳',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -382,12 +390,15 @@ export const translations = {
         input2Label: '修改后文本',
         input1Placeholder: '在此粘贴原始文本...',
         input2Placeholder: '在此粘贴修改后文本...',
+        noDifferences: '无差异',
       },
       
       xmlFormatter: {
         title: 'XML 格式化',
         desc: '格式化和美化 XML 文档。',
         comingSoon: '此工具正在开发中。',
+        inputPlaceholder: '在此粘贴您的 XML...',
+        outputPlaceholder: '格式化后的 XML 将显示在此...',
       },
       
       regex: {
@@ -611,6 +622,10 @@ export const translations = {
         current: 'Timestamp actual',
         toDate: 'A Fecha',
         toTimestamp: 'A Timestamp',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -620,12 +635,15 @@ export const translations = {
         input2Label: 'Texto Modificado',
         input1Placeholder: 'Pega el texto original aquí...',
         input2Placeholder: 'Pega el texto modificado aquí...',
+        noDifferences: 'Sin diferencias',
       },
       
       xmlFormatter: {
         title: 'Formateador XML',
         desc: 'Formatea y embellece documentos XML.',
         comingSoon: 'Esta herramienta está en desarrollo.',
+        inputPlaceholder: 'Pega tu XML aquí...',
+        outputPlaceholder: 'El XML formateado aparecerá aquí...',
       },
       
       regex: {
@@ -851,6 +869,10 @@ enterText: 'Ingrese texto o URL',
         current: '現在のタイムスタンプ',
         toDate: '日付へ',
         toTimestamp: 'タイムスタンプへ',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -860,12 +882,15 @@ enterText: 'Ingrese texto o URL',
         input2Label: '変更後のテキスト',
         input1Placeholder: '元のテキストをここに貼り付け...',
         input2Placeholder: '変更後のテキストをここに貼り付け...',
+        noDifferences: '差分がありません',
       },
       
       xmlFormatter: {
         title: 'XML フォーマッター',
         desc: 'XMLドキュメントをフォーマットして整形。',
         comingSoon: 'このツールは開発中です。',
+        inputPlaceholder: 'XMLをここに貼り付け...',
+        outputPlaceholder: 'フォーマットされたXMLがここに表示されます...',
       },
       
       regex: {
@@ -1092,6 +1117,10 @@ enterText: 'テキストまたはURLを入力してください',
         current: 'Aktueller Zeitstempel',
         toDate: 'Zu Datum',
         toTimestamp: 'Zu Zeitstempel',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -1101,12 +1130,15 @@ enterText: 'テキストまたはURLを入力してください',
         input2Label: 'Geänderter Text',
         input1Placeholder: 'Originaltext hier einfügen...',
         input2Placeholder: 'Geänderten Text hier einfügen...',
+        noDifferences: 'Keine Unterschiede',
       },
       
       xmlFormatter: {
         title: 'XML Formatierer',
         desc: 'Formatieren und verschönern Sie XML-Dokumente.',
         comingSoon: 'Dieses Tool ist in Entwicklung.',
+        inputPlaceholder: 'XML hier einfügen...',
+        outputPlaceholder: 'Formatiertes XML erscheint hier...',
       },
       
       regex: {
@@ -1333,6 +1365,10 @@ enterText: 'Bitte Text oder URL eingeben',
         current: 'Horodatage actuel',
         toDate: 'Vers Date',
         toTimestamp: 'Vers Horodatage',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -1342,12 +1378,15 @@ enterText: 'Bitte Text oder URL eingeben',
         input2Label: 'Texte Modifié',
         input1Placeholder: 'Collez le texte original ici...',
         input2Placeholder: 'Collez le texte modifié ici...',
+        noDifferences: 'Pas de différences',
       },
       
       xmlFormatter: {
         title: 'Formateur XML',
         desc: 'Formatez et embellissez les documents XML.',
         comingSoon: 'Cet outil est en développement.',
+        inputPlaceholder: 'Collez votre XML ici...',
+        outputPlaceholder: 'Le XML formaté apparaîtra ici...',
       },
       
       regex: {
@@ -1574,6 +1613,10 @@ enterText: 'Veuillez entrer du texte ou une URL',
         current: 'Текущая временная метка',
         toDate: 'В Дату',
         toTimestamp: 'В Временную Метку',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -1583,12 +1626,15 @@ enterText: 'Veuillez entrer du texte ou une URL',
         input2Label: 'Измененный Текст',
         input1Placeholder: 'Вставьте оригинальный текст здесь...',
         input2Placeholder: 'Вставьте измененный текст здесь...',
+        noDifferences: 'Нет различий',
       },
       
       xmlFormatter: {
         title: 'XML Форматтер',
         desc: 'Форматируйте и украшайте XML документы.',
         comingSoon: 'Этот инструмент в разработке.',
+        inputPlaceholder: 'Вставьте ваш XML здесь...',
+        outputPlaceholder: 'Форматированный XML появится здесь...',
       },
       
       regex: {
@@ -1815,6 +1861,10 @@ enterText: 'Введите текст или URL',
         current: 'Timestamp atual',
         toDate: 'Para Data',
         toTimestamp: 'Para Timestamp',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -1824,12 +1874,15 @@ enterText: 'Введите текст или URL',
         input2Label: 'Texto Modificado',
         input1Placeholder: 'Cole o texto original aqui...',
         input2Placeholder: 'Cole o texto modificado aqui...',
+        noDifferences: 'Sem diferenças',
       },
       
       xmlFormatter: {
         title: 'Formatador XML',
         desc: 'Formate e embeleze documentos XML.',
         comingSoon: 'Esta ferramenta está em desenvolvimento.',
+        inputPlaceholder: 'Cole seu XML aqui...',
+        outputPlaceholder: 'XML formatado aparecerá aqui...',
       },
       
       regex: {
@@ -2056,6 +2109,10 @@ enterText: 'Insira texto ou URL',
         current: 'Timestamp saat ini',
         toDate: 'Ke Tanggal',
         toTimestamp: 'Ke Timestamp',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -2065,12 +2122,15 @@ enterText: 'Insira texto ou URL',
         input2Label: 'Teks Dimodifikasi',
         input1Placeholder: 'Tempel teks asli di sini...',
         input2Placeholder: 'Tempel teks yang dimodifikasi di sini...',
+        noDifferences: 'Tidak ada perbedaan',
       },
       
       xmlFormatter: {
         title: 'Pemformat XML',
         desc: 'Format dan beautify dokumen XML.',
         comingSoon: 'Alat ini sedang dalam pengembangan.',
+        inputPlaceholder: 'Tempel XML Anda di sini...',
+        outputPlaceholder: 'XML yang diformat akan muncul di sini...',
       },
       
       regex: {
@@ -2297,6 +2357,10 @@ enterText: 'Masukkan teks atau URL',
         current: 'الطابع الزمني الحالي',
         toDate: 'إلى تاريخ',
         toTimestamp: 'إلى طابع زمني',
+        tsToDate: 'Timestamp to Date',
+        dateToTs: 'Date to Timestamp',
+        unixTs: 'Unix timestamp',
+        isoDate: 'ISO date',
       },
       
       diff: {
@@ -2306,12 +2370,15 @@ enterText: 'Masukkan teks atau URL',
         input2Label: 'النص المعدل',
         input1Placeholder: 'الصق النص الأصلي هنا...',
         input2Placeholder: 'الصق النص المعدل هنا...',
+        noDifferences: 'لا توجد اختلافات',
       },
       
       xmlFormatter: {
         title: 'منسق XML',
         desc: 'نسق وجمّل مستندات XML.',
         comingSoon: 'هذه الأداة قيد التطوير.',
+        inputPlaceholder: 'الصق XML الخاص بك هنا...',
+        outputPlaceholder: 'سيظهر XML المنسق هنا...',
       },
       
       regex: {
@@ -2477,6 +2544,6 @@ export function setLang(lang: Lang) {
   localStorage.setItem('lang', lang)
 }
 
-export function t(lang: Lang): Translation {
+export function t(lang: Lang): any {
   return translations[lang] || translations.en
 }

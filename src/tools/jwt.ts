@@ -46,7 +46,7 @@ export function jwtDecoder(this: any) {
   `
 }
 
-export function bindJwtDecoderEvents(router: any) {
+export function bindJwtDecoderEvents() {
   const lang = getLang()
   const i18n = t(lang)
   const jwtInput = document.getElementById('jwt-input') as HTMLTextAreaElement
